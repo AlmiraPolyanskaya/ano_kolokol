@@ -1,0 +1,29 @@
+@font-face {
+  src: url("../fonts/edisson.ttf") format("ttf");
+  font-family: "Edisson";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/pochaevsk_caps.ttf") format("ttf");
+  font-family: "Pochaevsk";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Regular.ttf") format("ttf");
+  font-family: "Railway";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("ttf");
+  font-family: "Railway";
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Black.ttf") format("ttf");
+  font-family: "Railway";
+  font-weight: 900;
+}
