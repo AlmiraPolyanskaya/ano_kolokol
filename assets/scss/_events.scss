@@ -3,9 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $bgc-beige;
 }
 
 h3 {
     font-family: $heading1-font;
     color: $brown;
+}
+
+.event_wrapper-content {
+
+
 }
