@@ -1,3 +1,10 @@
+.main-content {
+  background-image: url("../images/header_main/main-content_foto.png");
+  background-position: top center;
+  overflow: hidden;
+  background-size: contain;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
