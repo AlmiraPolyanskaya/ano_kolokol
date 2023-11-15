@@ -1,29 +1,29 @@
 @font-face {
-  src: url("../fonts/edisson.ttf") format("ttf");
+  src: url("../fonts/Edisson.ttf") format("truetype");
   font-family: "Edisson";
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/pochaevsk_caps.ttf") format("ttf");
+  src: url("../fonts/Pochaevsk-Caps-ieUcs.ttf") format("truetype");
   font-family: "Pochaevsk";
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/Raleway-Regular.ttf") format("ttf");
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
   font-family: "Railway";
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/Raleway-ExtraBold.ttf") format("ttf");
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
   font-family: "Railway";
   font-weight: 800;
 }
 
 @font-face {
-  src: url("../fonts/Raleway-Black.ttf") format("ttf");
+  src: url("../fonts/Raleway-Black.ttf") format("truetype");
   font-family: "Railway";
   font-weight: 900;
 }
