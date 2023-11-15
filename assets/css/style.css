@@ -11,9 +11,21 @@
   background-color: rgba(200, 170, 134, 0.7);
 }
 
-h3 {
+h2 {
   font-family: "Pochaevsk", Helvetica, sans-serif;
   color: #603C22;
+}
+
+.smi__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pattern {
