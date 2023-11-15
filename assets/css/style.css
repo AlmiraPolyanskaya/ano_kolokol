@@ -9,6 +9,21 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(200, 170, 134, 0.7);
+  height: 458px;
+}
+
+.event_wrapper-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 380px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 h2 {

@@ -5,6 +5,18 @@
     justify-content: center;
     align-items: center;
     background-color: $bgc-beige;
+    height: 458px;
+}
+
+.event_wrapper-content {
+    display: inline-flex;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+
 }
 
 h2 {
