@@ -2,6 +2,7 @@
 
 .event_wrapper {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     background-color: $bgc-beige;
@@ -10,6 +11,7 @@
 
 .event_wrapper-content {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     height: 380px;
@@ -25,6 +27,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $light-gray;
 }
 
 .event_wrapper-content {
