@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polar</title>
-  <link rel="shortcut icon" href="" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>АНО "Колокол"</title>
+  <link rel="shortcut icon" href="./assets/images/header_main/icon.png" type="image/png" />
   <link rel="stylesheet" href="./assets/css/normalize.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -22,69 +22,142 @@
 
 <body>
   <div class="container">
-    <section class="main">
-      <header class="header">
-        <div class="header-wrapper">
+
+    <!-- Секция Альмиры - начало -->
+    <header class="header">
+      <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="./assets/images/header_main/logo.png" alt="Логотип" />
         </div>
-      </header>
-      <section class="main-content">
-        <div class="main-content_wrapper">
-        </div>
-      </section>
-    </section>
+        <nav class="header__menu header__hamburger-menu">
 
-    <section class="">
-      <div class="_wrapper"></div>
-    </section>
+          <input id="header__menu__toggle" type="checkbox" />
+          <label class="header__menu__btn" for="header__menu__toggle">
+            <span></span>
+          </label>
 
-    <section class="">
-      <div class="_wrapper"></div>
-    </section>
+          <ul class="header__menu__list">
+            <li class="header__menu__list__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="header__menu__list__item">
+              <a href="#">Наша дятельность</a>
+            </li>
+            <li class="header__menu__list__item">
+              <a href="#">Наши мероприятия</a>
+            </li>
+            <li class="header__menu__list__item">
+              <a href="#">Помочь нам</a>
+            </li>
+          </ul>
 
-    <section class="">
-      <div class="_wrapper"></div>
-    </section>
-
-    <section class="events">
-      <img src="./assets/images/events/rectangle.png" alt="rectangle">
-      <div class="event_wrapper">
-        <div class="event_wrapper-content">
-          <h3>Наши мероприятия</h3>
-          <div class="event_wrapper-text">
-            <p>Здесь в ближайшее время появится информация о наших событиях  грядущих мероприятиях!
-            </p>
-          </div>
-        </div>
-        <div class="event_wrapper-foto">
-          <img src="./assets/images/events/remeslo.png" alt="remeslo">
+        </nav>
+        <div class="header__socials">
+          <button class="header__socials__button-telegram"><img src="./assets/images/header_main/telegram-icon.png"
+              alt="Телеграм"></button>
+          <button class="header__socials__button-vkontakte"><img src="./assets/images/header_main/vk-icon.png"
+              alt="Вконтакте"></button>
         </div>
       </div>
+    </header>
+
+    <section class="main-content">
+      <div class="main-content__wrapper">
+        <div class="main-content__info">
+          <div class="main-content__info__title__wrapper">
+            <h1 class="main-content__info__title">Проект “Колокол”</h1>
+          </div>
+          <p class="main-content__info__text">
+            Мы - Автономная Некоммерческая Организация "КОЛОКОЛ".
+            Наша команда возрождает <span class="bold-text">профессию жестянщика</span> и искусство изготовления <span
+              class="bold-text">фальцевой кровли</span>
+          </p>
+        </div>
+      </div>
+
     </section>
 
-    <section class="smi">
-      <div class="smi_wrapper">
-        <div class="smi_wrapper-foto">
-          <img src="./assets/images/events/master.png" alt="master">
+    <section class="help">
+      <div class="help__wrapper">
+
+        <br class="help__input-form">
+        <h3 class="help__input-form__heading">Поддержите наш проект</h3>
+        <input type="text" class="help__input-form__donation" placeholder="1000 ₽">
+        <input id="help__input-form__checkbox" type="checkbox" />
+        <p>Помогать проекту ежемесячно</p><br>
+        <div class="help__input-form__action">
+          <button class="button-1"><a href="">Поддержать</a></button>
+          <input type="submit" value="Submit">
         </div>
-        <div class="smi_wrapper-content2">
-          <h3>Мы в СМИ и на ТВ</h3>
-          <div class="smi_wrapper-text">
-            <a class="smi_wrapper-link" href="О нашем мастере Илье Емельянове"></a>
-            <p>Уральский мастер хочет возродить профессию жестянщика</p>
-            <p>Наша работа в Храме Покрова Пресвятой Богородицы, п. Сарапулка</p>
-          </div>
+      </div>
+
+      <div class="help__application-form">
+        <p class="help__application-form__text">Есть вопросы или предложения? Звоните!</p>
+        <p class="help__application-form__phone">+79025001495</p>
+        <div class="help__application-form__action">
+          <button class="button-1"><a href="">Или напишите нам прямо сейчас</a></button>
+        </div>
+      </div>
+
+  </div>
+  </section>
+
+  <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
+  <!-- Секция Альмиры - конец -->
+
+  <section class="">
+    <div class="_wrapper"></div>
+  </section>
+
+  <section class="">
+    <div class="_wrapper"></div>
+  </section>
+
+  <section class="">
+    <div class="_wrapper"></div>
+  </section>
+
+  <section class="events">
+    <img src="./assets/images/events/rectangle.png" alt="rectangle">
+    <div class="event_wrapper">
+      <div class="event_wrapper-content">
+        <h3>Наши мероприятия</h3>
+        <div class="event_wrapper-text">
+          <p>Здесь в ближайшее время появится информация о наших событиях грядущих мероприятиях!
+          </p>
+        </div>
+      </div>
+      <div class="event_wrapper-foto">
+        <img src="./assets/images/events/remeslo.png" alt="remeslo">
+      </div>
+    </div>
+  </section>
+
+  <section class="smi">
+    <div class="smi_wrapper">
+      <div class="smi_wrapper-foto">
+        <img src="./assets/images/events/master.png" alt="master">
+      </div>
+      <div class="smi_wrapper-content2">
+        <h3>Мы в СМИ и на ТВ</h3>
+        <div class="smi_wrapper-text">
+          <a class="smi_wrapper-link" href="О нашем мастере Илье Емельянове"></a>
+          <p>Уральский мастер хочет возродить профессию жестянщика</p>
+          <p>Наша работа в Храме Покрова Пресвятой Богородицы, п. Сарапулка</p>
+        </div>
       </div>
       <img src="./assets/images/events/pattern.png" alt="pattern">
-    </section>
+  </section>
 
-    <section class="">
-      <div class="_wrapper"></div>
-    </section>
+  <section class="">
+    <div class="_wrapper"></div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer__wrapper">
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer__wrapper">
+    </div>
+  </footer>
 
   </div>
 </body>
