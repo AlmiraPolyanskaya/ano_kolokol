@@ -9,14 +9,11 @@
 }
 
 .event_wrapper-content {
-    display: inline-flex;
-    height: 380px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 380px;
     gap: 10px;
-    
-    
-
 }
 
 h2 {
