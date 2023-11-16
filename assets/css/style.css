@@ -135,12 +135,6 @@
 .header__wrapper .header__menu {
   margin-left: 38px;
 }
-.header__wrapper .header__menu #header__menu__toggle {
-  opacity: 0;
-  position: absolute;
-  top: 15%;
-  right: 26%;
-}
 
 .header__menu__list {
   list-style: none;
@@ -230,7 +224,7 @@
   font-size: 80px;
   font-weight: 400;
   line-height: normal;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px black;
 }
 
 .main-content__info__text__wrapper {
@@ -268,26 +262,30 @@
 }
 
 .help__wrapper {
-  background-color: rgb(70, 71, 74);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  background-color: rgb(70, 71, 74);
   padding: 20.5px 80px 14px 80px;
   margin-bottom: 20px;
 }
 .help__wrapper .help__input-form__heading {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c8aa86;
   font-family: "Railway", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
 }
 
 .help__input-form__donation__wrapper {
@@ -301,10 +299,10 @@
           align-items: center;
 }
 .help__input-form__donation__wrapper p {
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c4c4c4;
   opacity: 0.5;
   font-size: 16px;
@@ -335,32 +333,33 @@
   opacity: 0.5;
   background-color: #eef2f7;
   height: 28px;
-  width: 28px;
+  width: 29px;
   position: relative;
 }
 .help__input-form__checkbox__wrapper #help__input-form__checkbox {
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 2px;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgba(238, 242, 247, 0.5);
 }
 
 .help__input-form__action {
-  margin-top: 15px;
+  margin-top: 22px;
 }
 .help__input-form__action .button {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-block: 0;
+  padding-inline: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -369,18 +368,16 @@
   border-radius: 0px 5px;
   background: rgb(200, 170, 134);
   cursor: pointer;
-  padding-block: 0;
-  padding-inline: 0;
 }
 .help__input-form__action .button a {
   color: white;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 800;
-  text-decoration: none;
   line-height: 145%;
-  text-transform: uppercase;
 }
 
 .help__application-form {
@@ -396,21 +393,21 @@
           flex-direction: column;
 }
 .help__application-form .help__application-form__text {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c4c4c4;
   opacity: 0.5;
   font-size: 14px;
   line-height: 165%;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
 }
 .help__application-form .help__application-form__phone {
-  margin-top: 7.2px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
+  margin-top: 7.2px;
   color: #c8aa86;
   font-family: "Railway", Helvetica, sans-serif;
   font-size: 28px;
@@ -420,14 +417,16 @@
   margin-top: 7.8px;
 }
 .help__application-form .help__application-form__action .button {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-block: 0;
+  padding-inline: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,18 +435,16 @@
   border-radius: 0px 5px;
   background: rgb(200, 170, 134);
   cursor: pointer;
-  padding-block: 0;
-  padding-inline: 0;
 }
 .help__application-form .help__application-form__action .button a {
   color: white;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 800;
-  text-decoration: none;
   line-height: 145%;
-  text-transform: uppercase;
 }
 
 .donate {
