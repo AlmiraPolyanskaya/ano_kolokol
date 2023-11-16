@@ -411,6 +411,9 @@ h2 {
 .donate {
   background-color: rgb(70, 71, 74);
 }
+.donate__margin {
+  margin-top: 20px;
+}
 .donate__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,14 +426,115 @@ h2 {
           align-items: center;
   padding: 24px 110px;
 }
-.donate__margin {
-  margin-top: 20px;
+.donate__form {
+  max-width: 496px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .donation-form__title {
+  max-width: 414px;
   color: #c8aa86;
   font-family: "Edisson", Helvetica, sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 57.6px;
+}
+.donation-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.donation-form__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-auto-rows: 54px;
+  gap: 8px;
+  margin-bottom: 17px;
+}
+.donation-form__button {
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #464646;
+  font-weight: 400;
+  line-height: 54px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.donation-form__button:hover {
+  background-color: rgb(200, 170, 134);
+}
+.donation-form__button-submit {
+  padding: 17px 0;
+  font-family: "Railway", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4.8px;
+  border: 1px solid #c8aa86;
+  background-color: #c8aa86;
+}
+.donation-form__count {
+  padding: 17px 27px 17px 12px;
+  margin-bottom: 17px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.donation-form__count[placeholder] {
+  color: #464646;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.donation-form__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.donation-form__help-input {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(238, 242, 247, 0.5);
+  border-radius: 4px;
+}
+.donation-form__help-label {
+  font-family: "Railway", Helvetica, sans-serif;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.donation-form__text {
+  margin: 12px 0 17px;
+  color: rgb(200, 170, 134);
+  text-align: center;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.donation-form__link {
+  display: inline-block;
+  max-width: 264px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
 }
