@@ -7,6 +7,7 @@
     align-items: center;
     background-color: $bgc-beige;
     height: 458px;
+
 }
 
 .event_wrapper-content {
@@ -14,19 +15,16 @@
     max-width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 380px;
     gap: 10px;
-}
-
-h2 {
-    font-family: $heading1-font;
-    color: $brown;
 }
 
 .smi__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
     background-color: $light-gray;
 }
 
@@ -36,6 +34,10 @@ h2 {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-
     
+}
+
+h2 {
+    font-family: $heading1-font;
+    color: $brown;
 }
