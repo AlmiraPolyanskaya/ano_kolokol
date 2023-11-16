@@ -3,6 +3,11 @@
 
 .pattern {
   @include flex-center;
+  max-width: 1280px;
+}
+
+.pattern > img {
+  max-width: 100%;
 }
 
 .main-content {
