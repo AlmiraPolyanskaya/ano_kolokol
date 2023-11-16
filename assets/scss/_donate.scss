@@ -1,0 +1,24 @@
+@import "variables";
+
+.donate {
+  background-color: $bgc_dark-gray;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 110px;
+  }
+  &__margin {
+    margin-top: 20px;
+  }
+}
+
+.donation-form {
+  &__title {
+    color: #c8aa86;
+    font-family: $heading2-font;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 57.6px;
+  }
+}
