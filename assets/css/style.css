@@ -30,7 +30,7 @@
 
 h2 {
   font-family: "Pochaevsk", Helvetica, sans-serif;
-  color: #603C22;
+  color: #603c22;
 }
 
 .smi__wrapper {
@@ -43,7 +43,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .pattern {
@@ -106,7 +106,7 @@ h2 {
 }
 
 .header__menu__list__item a {
-  color: #59606C;
+  color: #59606c;
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
