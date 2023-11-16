@@ -326,7 +326,7 @@ h2 {
 .help__input-form__action {
   margin-top: 15px;
 }
-.help__input-form__action .button-1 {
+.help__input-form__action .button {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: -webkit-box;
@@ -346,7 +346,7 @@ h2 {
   padding-block: 0;
   padding-inline: 0;
 }
-.help__input-form__action .button-1 a {
+.help__input-form__action .button a {
   color: white;
   text-align: center;
   font-family: "Raleway", Helvetica, sans-serif;
@@ -393,7 +393,7 @@ h2 {
 .help__application-form .help__application-form__action {
   margin-top: 7.8px;
 }
-.help__application-form .help__application-form__action .button-1 {
+.help__application-form .help__application-form__action .button {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: -webkit-box;
@@ -413,7 +413,7 @@ h2 {
   padding-block: 0;
   padding-inline: 0;
 }
-.help__application-form .help__application-form__action .button-1 a {
+.help__application-form .help__application-form__action .button a {
   color: white;
   text-align: center;
   font-family: "Raleway", Helvetica, sans-serif;
