@@ -6,9 +6,11 @@
 }
 
 .main-content {
-  background-image: url("../images/header_main/main-content_foto.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: {
+    image: url("../images/header_main/main-content_foto.png");
+    position: top center;
+    repeat: no-repeat;
+  }
   overflow: hidden;
   height: 577px;
   margin-top: -1px;
@@ -50,10 +52,13 @@
 
     & a {
       color: $gray;
-      font-size: 20px;
-      font-weight: 600;
+
       line-height: 22px;
       text-decoration: none;
+      font: {
+        size: 20px;
+        weight: 600;
+      }
     }
 
     &:hover {
@@ -114,9 +119,11 @@
 
   .main-content__info__title {
     color: #fff;
-    font-family: $heading1-font;
-    font-size: 80px;
-    font-weight: 400;
+    font: {
+      family: $heading1-font;
+      size: 80px;
+      weight: 400;
+    }
     line-height: normal;
     text-shadow: 1px 1px 1px #000;
   }
@@ -159,9 +166,11 @@
 
   .help__input-form__heading {
     color: $beige;
-    font-family: $text-railway;
-    font-size: 18px;
-    font-weight: 900;
+    font: {
+      family: $text-railway;
+      size: 18px;
+      weight: 900;
+    }
     text-transform: uppercase;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -240,10 +249,12 @@
     a {
       color: white;
       text-align: center;
-      font-family: $text-raleway;
+      font: {
+        family: $text-raleway;
+        size: 14px;
+        weight: 800;
+      }
       text-decoration: none;
-      font-size: 14px;
-      font-weight: 800;
       line-height: 145%;
       text-transform: uppercase;
     }
@@ -293,10 +304,12 @@
       a {
         color: white;
         text-align: center;
-        font-family: $text-raleway;
+        font: {
+          family: $text-raleway;
+          size: 14px;
+          weight: 800;
+        }
         text-decoration: none;
-        font-size: 14px;
-        font-weight: 800;
         line-height: 145%;
         text-transform: uppercase;
       }
