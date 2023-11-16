@@ -12,6 +12,8 @@
   overflow: hidden;
   height: 577px;
   margin-top: -1px;
+  position: relative;
+  z-index: 10;
 }
 
 .header__wrapper {
@@ -69,6 +71,7 @@
 }
 
 .header__socials__telegram {
+  box-sizing: content-box;
   width: 57px;
   height: 54px;
   padding: 3px 3px 0px 3px;
@@ -76,6 +79,7 @@
 }
 
 .header__socials__vkontakte {
+  box-sizing: content-box;
   width: 57px;
   height: 54px;
   padding: 5px 5px 5px 5px;
@@ -101,6 +105,8 @@
   background: $bgc-beige;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 30;
 }
 
 .main-content__info__title {
@@ -126,6 +132,8 @@
   border-radius: 0px 10px;
   background: rgba(32, 35, 40, 0.5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 20;
 }
 
 .main-content__info__text {
@@ -172,6 +180,7 @@
   }
 
   .help__input-form__donation {
+    box-sizing: content-box;
     display: inline-flex;
     width: 123px;
     height: 23px;
@@ -212,6 +221,7 @@
   margin-top: 15px;
 
   .button-1 {
+    box-sizing: content-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,6 +274,7 @@
     margin-top: 7.8px;
 
     .button-1 {
+      box-sizing: content-box;
       display: flex;
       justify-content: center;
       align-items: center;
