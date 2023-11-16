@@ -58,7 +58,7 @@
 }
 
 .header__menu__list__item a {
-  color: #59606C;
+  color: #59606c;
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
@@ -163,6 +163,51 @@
 
 .bold-text {
   font-weight: 800;
+}
+
+.help__wrapper {
+  background-color: rgb(70, 71, 74);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20.5px 80px 14px 80px;
+}
+
+.help__input-form__heading {
+  color: #c8aa86;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.help__input-form__donation__wrapper {
+  width: 500px;
+  margin-top: 17.2px;
+}
+
+.help__input-form__donation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 26.84px 0px 12px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  font-family: "Railway", Helvetica, sans-serif;
+  color: #464646;
 }
 
 .container {
