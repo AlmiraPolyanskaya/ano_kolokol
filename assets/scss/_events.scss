@@ -20,6 +20,15 @@
     gap: 10px;
 }
 
+.event_wrapper-title {
+    font-family: $heading1-font;
+    color: $brown;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px; /* 115.2% */
+}
+
 .smi__wrapper {
     display: flex;
     justify-content: center;
@@ -37,7 +46,3 @@
     
 }
 
-h2 {
-    font-family: $heading1-font;
-    color: $brown;
-}
