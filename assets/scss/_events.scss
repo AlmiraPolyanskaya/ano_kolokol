@@ -22,6 +22,7 @@
 
 .event_wrapper-title {
     font-family: $heading1-font;
+    max-width: 453.376px;
     color: $brown;
     font-size: 50px;
     font-style: normal;
@@ -44,5 +45,15 @@
     justify-content: center;
     align-items: center;
     
+}
+
+.smi_wrapper_title {
+    font-family: $heading1-font;
+    max-width: 453.376px;;
+    color: $brown;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px; /* 115.2% */
 }
 
