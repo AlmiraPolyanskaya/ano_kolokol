@@ -69,6 +69,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1280px;
+}
+
+.pattern > img {
+  max-width: 100%;
 }
 
 .main-content {
