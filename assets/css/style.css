@@ -284,6 +284,7 @@ h2 {
   display: inline-flex;
   width: 123px;
   height: 23px;
+  outline: none;
   padding: 0px 26.84px 0px 12px;
   vertical-align: middle;
   border-radius: 4px;
