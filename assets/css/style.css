@@ -1,3 +1,19 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
 .event_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +69,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1280px;
+}
+
+.pattern > img {
+  max-width: 100%;
 }
 
 .main-content {
@@ -62,6 +83,8 @@ h2 {
   overflow: hidden;
   height: 577px;
   margin-top: -1px;
+  position: relative;
+  z-index: 10;
 }
 
 .header__wrapper {
@@ -73,21 +96,12 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.header__logo {
+.header__wrapper .header__logo {
   margin-left: 7px;
   margin-top: -1px;
 }
-
-.header__menu {
+.header__wrapper .header__menu {
   margin-left: 38px;
-}
-
-#header__menu__toggle {
-  opacity: 0;
-  position: absolute;
-  top: 15%;
-  right: 26%;
 }
 
 .header__menu__list {
@@ -98,22 +112,19 @@ h2 {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
-
-.header__menu__list__item {
+.header__menu__list .header__menu__list__item {
   margin-right: 20px;
   padding: 7px 15px;
   cursor: pointer;
 }
-
-.header__menu__list__item a {
+.header__menu__list .header__menu__list__item a {
   color: #59606c;
-  font-size: 20px;
-  font-weight: 600;
   line-height: 22px;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-.header__menu__list__item:hover {
+.header__menu__list .header__menu__list__item:hover {
   background-color: rgba(200, 170, 134, 0.4);
   outline-style: none;
 }
@@ -126,22 +137,26 @@ h2 {
   gap: 24px;
   margin-top: -3px;
 }
-
-.header__socials__telegram {
+.header__socials .header__socials__telegram {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 57px;
   height: 54px;
   padding: 3px 3px 0px 3px;
   margin-top: 5px;
 }
-
-.header__socials__vkontakte {
+.header__socials .header__socials__telegram:hover {
+  background-color: rgba(200, 170, 134, 0.4);
+  border-radius: 12px;
+}
+.header__socials .header__socials__vkontakte {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 57px;
   height: 54px;
   padding: 5px 5px 5px 5px;
 }
-
-.header__socials__telegram:hover,
-.header__socials__vkontakte:hover {
+.header__socials .header__socials__vkontakte:hover {
   background-color: rgba(200, 170, 134, 0.4);
   border-radius: 12px;
 }
@@ -168,15 +183,16 @@ h2 {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 30;
 }
-
-.main-content__info__title {
+.main-content__info__title__wrapper .main-content__info__title {
   color: #fff;
   font-family: "Pochaevsk", Helvetica, sans-serif;
   font-size: 80px;
   font-weight: 400;
   line-height: normal;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px black;
 }
 
 .main-content__info__text__wrapper {
@@ -201,40 +217,43 @@ h2 {
   background: rgba(32, 35, 40, 0.5);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 20;
 }
-
-.main-content__info__text {
+.main-content__info__text__wrapper .main-content__info__text {
   color: white;
   font-size: 20px;
   line-height: 170%;
 }
-
-.bold-text {
+.main-content__info__text__wrapper .main-content__info__text .bold-text {
   font-weight: 800;
 }
 
 .help__wrapper {
-  background-color: rgb(70, 71, 74);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  background-color: rgb(70, 71, 74);
   padding: 20.5px 80px 14px 80px;
   margin-bottom: 20px;
 }
-
-.help__input-form__heading {
+.help__wrapper .help__input-form__heading {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c8aa86;
   font-family: "Railway", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
 }
 
 .help__input-form__donation__wrapper {
@@ -248,16 +267,18 @@ h2 {
           align-items: center;
 }
 .help__input-form__donation__wrapper p {
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c4c4c4;
   opacity: 0.5;
   font-size: 16px;
   line-height: 150%;
 }
 .help__input-form__donation__wrapper .help__input-form__donation {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -280,31 +301,33 @@ h2 {
   opacity: 0.5;
   background-color: #eef2f7;
   height: 28px;
-  width: 28px;
+  width: 29px;
   position: relative;
 }
-
-#help__input-form__checkbox {
+.help__input-form__checkbox__wrapper #help__input-form__checkbox {
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 2px;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgba(238, 242, 247, 0.5);
 }
 
 .help__input-form__action {
-  margin-top: 15px;
+  margin-top: 22px;
 }
-.help__input-form__action .button-1 {
+.help__input-form__action .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-block: 0;
+  padding-inline: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,18 +336,16 @@ h2 {
   border-radius: 0px 5px;
   background: rgb(200, 170, 134);
   cursor: pointer;
-  padding-block: 0;
-  padding-inline: 0;
 }
-.help__input-form__action .button-1 a {
+.help__input-form__action .button a {
   color: white;
   text-align: center;
-  font-family: "Raleway", Helvetica, sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 145%;
-  text-transform: uppercase;
 }
 
 .help__application-form {
@@ -340,21 +361,21 @@ h2 {
           flex-direction: column;
 }
 .help__application-form .help__application-form__text {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   color: #c4c4c4;
   opacity: 0.5;
   font-size: 14px;
   line-height: 165%;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
 }
 .help__application-form .help__application-form__phone {
-  margin-top: 7.2px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
+  margin-top: 7.2px;
   color: #c8aa86;
   font-family: "Railway", Helvetica, sans-serif;
   font-size: 28px;
@@ -363,13 +384,17 @@ h2 {
 .help__application-form .help__application-form__action {
   margin-top: 7.8px;
 }
-.help__application-form .help__application-form__action .button-1 {
+.help__application-form .help__application-form__action .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-block: 0;
+  padding-inline: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,25 +403,145 @@ h2 {
   border-radius: 0px 5px;
   background: rgb(200, 170, 134);
   cursor: pointer;
-  padding-block: 0;
-  padding-inline: 0;
 }
-.help__application-form .help__application-form__action .button-1 a {
+.help__application-form .help__application-form__action .button a {
   color: white;
   text-align: center;
-  font-family: "Raleway", Helvetica, sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 145%;
-  text-transform: uppercase;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  font-family: "Montserrat", Helvetica, sans-serif;
+.donate {
+  background-color: rgb(70, 71, 74);
+}
+.donate__margin {
+  margin-top: 20px;
+}
+.donate__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 110px;
+}
+.donate__form {
+  max-width: 496px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.donation-form__title {
+  max-width: 414px;
+  color: #c8aa86;
+  font-family: "Edisson", Helvetica, sans-serif;
+  font-size: 50px;
   font-weight: 400;
-  font-style: normal;
-  color: black;
+  line-height: 57.6px;
+}
+.donation-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.donation-form__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-auto-rows: 54px;
+  gap: 8px;
+  margin-bottom: 17px;
+}
+.donation-form__button {
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #464646;
+  font-weight: 400;
+  line-height: 54px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.donation-form__button:hover {
+  background-color: rgb(200, 170, 134);
+}
+.donation-form__button-submit {
+  padding: 17px 0;
+  font-family: "Railway", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4.8px;
+  border: 1px solid #c8aa86;
+  background-color: #c8aa86;
+}
+.donation-form__count {
+  padding: 17px 27px 17px 12px;
+  margin-bottom: 17px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.donation-form__count[placeholder] {
+  color: #464646;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.donation-form__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.donation-form__help-input {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(238, 242, 247, 0.5);
+  border-radius: 4px;
+}
+.donation-form__help-label {
+  font-family: "Railway", Helvetica, sans-serif;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.donation-form__text {
+  margin: 12px 0 17px;
+  color: rgb(200, 170, 134);
+  text-align: center;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.donation-form__link {
+  display: inline-block;
+  max-width: 264px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: "Railway", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
 }

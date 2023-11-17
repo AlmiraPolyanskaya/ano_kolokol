@@ -1,18 +1,6 @@
+@import "base";
 @import "_variables";
-<<<<<<< HEAD
-@import "_header_main";
-=======
-@import "_work";
-=======
+@import "_mixins";
 @import "_events";
 @import "_header_main_help";
-
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  font-family: $text-font;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-}
+@import "donate";

@@ -30,13 +30,7 @@
         <div class="header__logo">
           <img src="./assets/images/header_main/logo.png" alt="Логотип" />
         </div>
-        <nav class="header__menu header__hamburger-menu">
-
-          <input id="header__menu__toggle" type="checkbox" />
-          <label class="header__menu__btn" for="header__menu__toggle">
-            <span></span>
-          </label>
-
+        <nav class="header__menu">
           <ul class="header__menu__list">
             <li class="header__menu__list__item">
               <a href="#">О нас</a>
@@ -91,7 +85,7 @@
             <p>Помогать проекту ежемесячно</p>
           </div>
           <div class="help__input-form__action">
-            <button class="button-1"><a href="">Поддержать</a></button>
+            <button class="button"><a href="">Поддержать</a></button>
           </div>
         </div>
 
@@ -99,7 +93,7 @@
           <p class="help__application-form__text">Есть вопросы или предложения? Звоните!</p>
           <p class="help__application-form__phone">+79025001495</p>
           <div class="help__application-form__action">
-            <button class="button-1"><a href="">Или напишите нам прямо сейчас</a></button>
+            <button class="button"><a href="">Или напишите нам прямо сейчас</a></button>
           </div>
         </div>
 
@@ -174,14 +168,41 @@
     </section>
     <!-- Секция Татьяны - конец -->
 
-    <section class="donate">
-      <div class="donate_wrapper"></div>
+    <!-- Секция Катерины - начало -->
+    <section class="donate donate__margin">
+      <div class="donate__wrapper">
+        <div class="donation-form donate__form">
+          <h3 class="donation-form__title">Присоединиться к поддержке</h3>
+          <form class="donation-form__form" action="#" method="post">
+            <div class="donation-form__buttons">
+              <button class="donation-form__button">50 ₽</button>
+              <button class="donation-form__button">100 ₽</button>
+              <button class="donation-form__button">250 ₽</button>
+              <button class="donation-form__button">500 ₽</button>
+              <button class="donation-form__button">1000 ₽</button>
+              <button class="donation-form__button">2500 ₽</button>
+            </div>
+            <input class="donation-form__count" type="text" placeholder="1000 ₽">
+            <div class="donation-form__help">
+              <input class="donation-form__help-input" type="checkbox" name="donate" id="donate" value="donate">
+              <label class="donation-form__help-label" for="donate">Помогать фонду ежемесячно</label>
+            </div>
+            <button class="donation-form__button-submit" type="submit">Перевести 1000 ₽</button>
+            <p class="donation-form__text">10000 человек уже поддержало нас</p>
+            <a class="donation-form__link" href="#">Также вы можете использовать наш расчетный счет</a>
+          </form>
+        </div>
+        <div class="donate-image">
+          <img src="./assets/images/donate/donation-foto.png" alt="Donate">
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
       <div class="footer__wrapper">
       </div>
     </footer>
+    <!-- Секция Катерины - конец -->
 
   </div>
 </body>
