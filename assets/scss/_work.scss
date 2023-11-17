@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+    align-items: flex-end;
 }
 .action_wrapper_title{
     color: #603C22;
@@ -13,11 +14,19 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.action_title{
+    padding-top: -20px;
+    margin-bottom:-20px;
+    margin-top: -7px;
+
+}
 .action_wrapper_content {
     display: flex;
     flex-direction: column;
 
-    padding: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: 28px;
     margin-right: 28px;
     
