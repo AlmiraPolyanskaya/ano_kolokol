@@ -106,12 +106,12 @@ _А также впервые осуществляли процесс верст
 <br />
 
 Здесь представлены инструменты, которые мы использовали в работе.
-
-<img src="./assets/images/git_readme/html.svg" alt="HTML5" width="100" styles="margin-left:-20">
-<img src="./assets/images/git_readme/css.svg" alt="CSS3" width="70">
-<img src="./assets/images/git_readme/figma.svg" alt="Figma" width="60">
+<br />
+<img src="./assets/images/git_readme/html.svg" alt="HTML5" width="100"> &nbsp;
+<img src="./assets/images/git_readme/css.svg" alt="CSS3" width="70"> &nbsp; &nbsp; &nbsp;
+<img src="./assets/images/git_readme/figma.svg" alt="Figma" width="60"> &nbsp;
 <img src="./assets/images/git_readme/sass.svg" alt="SASS" width="110">
-
+<br />
 <!-- USAGE -->
 
 ## Реализация
