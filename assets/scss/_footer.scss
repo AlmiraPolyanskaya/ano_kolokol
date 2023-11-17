@@ -1,0 +1,100 @@
+@import "variables";
+
+.footer {
+  padding: 0 63px 8px 11px;
+  background-color: #000;
+  color: $light-gray;
+  &__wrapper {
+    @include flex-space-between;
+    align-items: start;
+  }
+  &__title {
+    position: relative;
+    margin: 0;
+    font-family: $heading1-font;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    &_first {
+      margin-bottom: 18px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 25px;
+        height: 2px;
+        background-color: $beige;
+      }
+    }
+    &_second {
+      margin-bottom: 6px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 35px;
+        height: 2px;
+        background-color: $beige;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  max-width: 228px;
+  & img {
+    width: 100%;
+  }
+  & p {
+    padding-left: 25px;
+    font-family: $text-font;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.footer-nav {
+  padding-top: 32px;
+  &__list {
+    display: flex;
+    gap: 31px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: $light-gray;
+    &:hover {
+      color: $beige;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-socials {
+  padding-top: 32px;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+}
+
+.footer-arrow {
+  padding-top: 64px;
+  &__link {
+    @include flex-center;
+    align-items: center;
+    width: 47px;
+    height: 42px;
+    border-radius: 0px 5px;
+    background-color: $beige;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
