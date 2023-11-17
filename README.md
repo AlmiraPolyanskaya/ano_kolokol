@@ -12,13 +12,15 @@
 <details>
   <summary>Содержание</summary>
   <ol>
-    <li> <a href="#about-the-project">О проекте</a>
-    <li><a href="#built-with">Инструменты</a></li>
-    <li><a href="#usage">Реализация</a></li>
-    <li><a href="#contact">Команда</a></li>
-    <li><a href="#contact">Ссылка</a></li>
+    <li><a href="#about-the-project">О проекте</a></li>
+    <li><a href="#instruments">Инструменты</a></li>
+    <li><a href="#screen">Реализация</a></li>
+    <li><a href="#we">Команда</a></li>
+    <li><a href="#link">Ссылка</a></li>
   </ol>
 </details>
+
+<!-- ABOUT THE PROJECT -->
 
 ## О проекте
 
@@ -29,25 +31,29 @@
 В этом проекте мы сделали базовую верстку сайта шириной 1280px.
 Далее мы планируем добавить адаптивность для экранов разных размеров: телефонов, планшетов, ноутбуков и больших десктопов.
 
+<!-- INSTRUMENTS -->
+
 ## Инструменты
 
-Здесь представлены инструменты, использованные в работе.
+Здесь представлены инструменты, которые мы использовали в работе.
 
 <img src="./assets/images/readmi/html.svg" alt="HTML5" width="100">  
 <img src="./assets/images/readmi/css.svg" alt="CSS3" width="70">
 <img src="./assets/images/readmi/figma.svg" alt="Figma" width="60">
 <img src="./assets/images/readmi/sass.svg" alt="SASS" width="110">
 
+<!-- SCREEN -->
+
 ## Реализация
 
-Полноэкранная версия
+Версия экрана 1280px
 <br />
 <img src="./assets/gif/Metting.gif" alt="Metting" width="1200">
 <br />
 
-## Команда
+<!-- WE -->
 
-Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.com/AlmiraPolyanskaya/ano_kolokol)
+## Команда
 
 Альмира - [GitHub](https://github.com/AlmiraPolyanskaya)
 
@@ -59,9 +65,13 @@ Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.
 
 Нина - [GitHub](https://github.com/mercurialli)
 
+<!-- LINK -->
+
 ## Ссылка
 
 Ссылка на проект
+
+Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.com/AlmiraPolyanskaya/ano_kolokol)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
