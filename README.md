@@ -33,9 +33,9 @@
 Здесь представлены инструменты, использованные в работе.
 
 <img src="./assets/images/readmi/html.svg" alt="HTML5" width="100">  
-<img src="./assets/images/readmi/css.svg" alt="CSS3" width="85">
-<img src="./assets/images/readmi/figma.svg" alt="Figma" width="70">
-<img src="./assets/images/readmi/sass.svg" alt="SASS" width="120">
+<img src="./assets/images/readmi/css.svg" alt="CSS3" width="70">
+<img src="./assets/images/readmi/figma.svg" alt="Figma" width="60">
+<img src="./assets/images/readmi/sass.svg" alt="SASS" width="110">
 
 ## Демонстрация
 
@@ -49,21 +49,15 @@
 Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.com/AlmiraPolyanskaya/ano_kolokol)
 
 Альмира - [GitHub](https://github.com/AlmiraPolyanskaya)
+
 Екатерина - [GitHub](https://github.com/Katerina-99)
+
 Виталия - [GitHub](https://github.com/vitalia-kokhanova)
+
 Татьяна - [GitHub](https://github.com/Rododondron)
+
 Нина - [GitHub](https://github.com/mercurialli)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [product-screenshot]: ./assets/images/readmi/logo.png
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
