@@ -1238,6 +1238,7 @@
 
 .footer-socials {
   padding-top: 32px;
+  padding-right: 63px;
 }
 .footer-socials__list {
   display: -webkit-box;
@@ -1250,7 +1251,10 @@
 }
 
 .footer-arrow {
-  padding-top: 64px;
+  position: fixed;
+  right: 100px;
+  bottom: 38px;
+  z-index: 99;
 }
 .footer-arrow__link {
   display: -webkit-box;

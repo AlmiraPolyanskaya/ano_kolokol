@@ -75,6 +75,7 @@
 
 .footer-socials {
   padding-top: 32px;
+  padding-right: 63px;
   &__list {
     display: flex;
     align-items: center;
@@ -83,7 +84,10 @@
 }
 
 .footer-arrow {
-  padding-top: 64px;
+  position: fixed;
+  right: 100px;
+  bottom: 38px;
+  z-index: 99;
   &__link {
     @include flex-center;
     align-items: center;
