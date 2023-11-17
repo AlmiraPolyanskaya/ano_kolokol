@@ -12,12 +12,8 @@
 <details>
   <summary>Содержание</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">О проекте</a>
-      <ul>
-        <li><a href="#built-with">Инструменты</a></li>
-      </ul>
-    </li>
+    <li> <a href="#about-the-project">О проекте</a>
+    <li><a href="#built-with">Инструменты</a></li>
     <li><a href="#usage">Демонстрация</a></li>
     <li><a href="#contact">Команда</a></li>
   </ol>
@@ -37,9 +33,9 @@
 Здесь представлены инструменты, использованные в работе.
 
 <img src="./assets/images/readmi/html.svg" alt="HTML5" width="100">  
-<img src="./assets/images/readmi/css.svg" alt="CSS3" width="100">
-<img src="./assets/images/readmi/figma.svg" alt="Figma" width="100" styles="margin-right:2vw">
-<img src="./assets/images/readmi/sass.svg" alt="SASS" width="100">
+<img src="./assets/images/readmi/css.svg" alt="CSS3" width="85">
+<img src="./assets/images/readmi/figma.svg" alt="Figma" width="70">
+<img src="./assets/images/readmi/sass.svg" alt="SASS" width="120">
 
 ## Демонстрация
 
@@ -48,24 +44,20 @@
 <img src="./assets/gif/Metting.gif" alt="Metting" width="1200">
 <br />
 
-## Contact
+## Команда
 
 Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.com/AlmiraPolyanskaya/ano_kolokol)
 
 Альмира - [GitHub](https://github.com/AlmiraPolyanskaya)
-
 Екатерина - [GitHub](https://github.com/Katerina-99)
-
 Виталия - [GitHub](https://github.com/vitalia-kokhanova)
-
 Татьяна - [GitHub](https://github.com/Rododondron)
-
 Нина - [GitHub](https://github.com/mercurialli)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[product-screenshot]: ./assets/images/header_main/logo.png
+[product-screenshot]: ./assets/images/readmi/logo.png
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
