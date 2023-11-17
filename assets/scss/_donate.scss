@@ -20,6 +20,8 @@
 .donation-form {
   &__title {
     max-width: 414px;
+    margin: 0;
+    margin-bottom: 15px;
     color: $beige;
     font-family: $heading2-font;
     font-size: 50px;
@@ -80,24 +82,7 @@
   }
   &__help {
     display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 14px;
-    &-input {
-      width: 24px;
-      height: 24px;
-      background-color: rgba(238, 242, 247, 0.5);
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    &-label {
-      font-family: $text-railway;
-      color: #c4c4c4;
-      font-size: 16px;
-      font-weight: 400;
-      opacity: 0.5;
-      cursor: pointer;
-    }
   }
   &__text {
     margin: 12px 0 17px;
@@ -119,6 +104,64 @@
     line-height: 21px;
     text-decoration: none;
   }
+}
+
+/* For custom checkbox */
+.donation-form__help-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 4px;
+  cursor: pointer;
+  font-family: $text-railway;
+  color: rgba(196, 196, 196, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.donation-form__help-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.donation-form__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: grey;
+  border: 1px grey solid;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.donation-form__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.donation-form__help-label input:checked ~ .donation-form__checkmark::after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.donation-form__help-label .donation-form__checkmark::after {
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
 }
 
 .donate-image {
