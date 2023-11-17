@@ -11,13 +11,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -47,9 +40,10 @@
 
 Это наш **второй учебный проект по верстке** сайта по макету Figma, и отлчается он от прошлого проекта тем, что на этот раз нам было нужно **создать макет самостоятельно**, поскольку у заказчика его не было.
 
-Итоговый макет, по которому наша команда осуществляла верстку [![Product Name Screen Shot][product-screenshot]](<https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(2-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F)?type=design&node-id=1%3A283&mode=design&t=Jyg0XzNpVhEBb7oh-1> "Макет")
+Итоговый макет, по которому наша команда осуществляла верстку [![Product Name Screen Shot][product-screenshot]](<https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(2-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F)?type=design&node-id=1%3A283&mode=design&t=Jyg0XzNpVhEBb7oh-1](https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(last-version)?type=design&node-id=1%3A108&mode=design&t=6bJX251JqalI0Ebl-1)> "Макет")
 
 В этом проекте мы сделали базовую верстку сайта шириной 1280px.
+
 _Далее мы планируем добавить адаптивность для экранов разных размеров: телефонов, планшетов, ноутбуков и больших десктопов._
 
 <!-- BUILD WITH -->
@@ -103,6 +97,7 @@ $shadow: rgba(0, 0, 0, 0.25);
       }
     }
   }
+}
 ```
 
 _А также впервые осуществляли процесс верстки сайта в разных ветках GIT_
