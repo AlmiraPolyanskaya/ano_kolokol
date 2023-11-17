@@ -14,8 +14,9 @@
   <ol>
     <li> <a href="#about-the-project">О проекте</a>
     <li><a href="#built-with">Инструменты</a></li>
-    <li><a href="#usage">Демонстрация</a></li>
+    <li><a href="#usage">Реализация</a></li>
     <li><a href="#contact">Команда</a></li>
+    <li><a href="#contact">Ссылка</a></li>
   </ol>
 </details>
 
@@ -37,7 +38,7 @@
 <img src="./assets/images/readmi/figma.svg" alt="Figma" width="60">
 <img src="./assets/images/readmi/sass.svg" alt="SASS" width="110">
 
-## Демонстрация
+## Реализация
 
 Полноэкранная версия
 <br />
@@ -57,6 +58,10 @@ Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.
 Татьяна - [GitHub](https://github.com/Rododondron)
 
 Нина - [GitHub](https://github.com/mercurialli)
+
+## Ссылка
+
+Ссылка на проект
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
