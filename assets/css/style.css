@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -430,6 +431,205 @@ h2 {
   line-height: 145%;
 }
 
+/*********************************** Стили блока "О нас" ***********************************/
+.description {
+  margin: 20px 0;
+}
+.description__wrapper {
+  background-color: rgba(200, 170, 134, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.description__title_big {
+  color: #603c22;
+  font-family: "Pochaevsk", Helvetica, sans-serif;
+  font-size: 90px;
+  margin: 15px 0 0 0;
+}
+
+/*********************************** Верхняя часть "Наша миссия" ***********************************/
+.description__first-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+.description__title_middle {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.description__picture {
+  width: 30%;
+  position: absolute;
+  right: 200px;
+  z-index: 0;
+}
+.description__picture img {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.mission-list {
+  list-style-image: url("../images/description/description_marker.svg");
+  padding: 0 50px 0 70px;
+}
+.mission-list__wrapper {
+  width: 75%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding-block: 20px;
+  z-index: 1;
+}
+.mission-list__item {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+/*********************************** Нижняя часть с тремя блоками ***********************************/
+.description__second-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  padding-block: 50px;
+}
+.description__second-container ul {
+  list-style-type: none;
+  padding: 0px 25px 15px 25px;
+}
+
+.description__titles_small {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.second-container__inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.second-container__inner-wrapper li {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.description__contacts,
+.description__requisites {
+  width: 48%;
+  background-color: rgba(217, 217, 217, 0.7);
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.requisites-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
+}
+
+.description__social-media {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.description__social-media-text {
+  margin: 0 0 15px 0;
+}
+
+.description__icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.description__icons-list-item img {
+  border-radius: 15px;
+  background: transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
+}
+.description__icons-list-item:hover {
+  border-radius: 15px;
+  background: transparent;
+  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
+}
+.description__icons-list-item a:hover {
+  border-radius: 15px;
+  background: transparent;
+  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
+}
+
+/*********************************** Конец стилей блока "О нас" ***********************************/
 .donate {
   background-color: rgb(70, 71, 74);
 }
