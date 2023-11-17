@@ -1,5 +1,9 @@
 @import "_variables";
 
+.event {
+    margin-top: 20px;
+}
+
 .event_wrapper {
     display: flex;
     max-width: 100%;
@@ -14,23 +18,96 @@
     max-width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 380px;
     gap: 10px;
 }
 
-h2 {
+.event_wrapper_content-title {
     font-family: $heading1-font;
+    max-width: 453.376px;
     color: $brown;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px; /* 115.2% */
 }
 
-.smi__wrapper {
+.event_content-text-wrapper {
+    display: block;
+    max-height: 100%;
+    padding: 15px 20px 15px 15px;
+    box-sizing: border-box;
+    margin-top: -5px;
+    margin-left: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.event_content-text {
+    color: $gray;
+    font-family: $text-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */   
+}
+
+.event_wrapper-foto {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.smi {
+    margin-top: 20px;
+}
+
+.smi_wrapper {
+    display: flex;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     background-color: $light-gray;
+    height: 458px;
 }
 
-.event_wrapper-content {
+.smi_wrapper-foto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;   
+}
 
-    
+.smi_wrapper-content {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height: 340px;
+    gap: 10px;
+}
+
+.smi_wrapper_title {
+    font-family: $heading1-font;
+    max-width: 453.376px;;
+    color: $brown;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px; /* 115.2% */
+}
+
+.smi_text-wraper {  
+    width: 508px;
+    height: 61px;
+    color: $brown;
+    font-family: $text-font;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 25px */
 }
