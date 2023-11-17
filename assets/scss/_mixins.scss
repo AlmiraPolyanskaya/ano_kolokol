@@ -17,3 +17,15 @@
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+@mixin description-boxes-justify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin description-boxes-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
