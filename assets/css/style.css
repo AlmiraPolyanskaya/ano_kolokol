@@ -989,6 +989,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
+  max-width: 80%;
 }
 .description__title_middle {
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -998,6 +999,7 @@
 }
 .description__picture {
   width: 30%;
+  max-width: 30%;
   position: absolute;
   right: 200px;
   z-index: 0;
@@ -1005,6 +1007,7 @@
 .description__picture img {
   width: 100%;
   margin-top: 5%;
+  max-width: 410px;
 }
 
 .mission-list {
