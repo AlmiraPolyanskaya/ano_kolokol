@@ -16,7 +16,7 @@
 <div align="center">
 <a href="https://t.me/kolokol196">
 <img src="./assets/images/header_main/logo.png" alt="Logo">
-<h3 align="center">**АНО "Колокол"**</h3></a>
+<h3 align="center">"АНО "Колокол"</h3></a>
 </div>
 <br />
 
