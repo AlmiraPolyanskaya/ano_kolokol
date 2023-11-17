@@ -109,22 +109,34 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
-.header__menu__list .header__menu__list__item {
+.header__menu__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 20px;
   padding: 7px 15px;
   cursor: pointer;
 }
-.header__menu__list .header__menu__list__item a {
+.header__menu__list__item a {
+  text-align: center;
   color: #59606c;
   line-height: 22px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
 }
-.header__menu__list .header__menu__list__item:hover {
+.header__menu__list__item:hover {
   background-color: rgba(200, 170, 134, 0.4);
   outline-style: none;
 }
@@ -137,7 +149,7 @@ h2 {
   gap: 24px;
   margin-top: -3px;
 }
-.header__socials .header__socials__telegram {
+.header__socials__telegram {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 57px;
@@ -145,7 +157,7 @@ h2 {
   padding: 3px 3px 0px 3px;
   margin-top: 5px;
 }
-.header__socials .header__socials__telegram:hover {
+.header__socials__telegram:hover {
   background-color: rgba(200, 170, 134, 0.4);
   border-radius: 12px;
 }
@@ -236,6 +248,8 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -310,7 +324,7 @@ h2 {
   width: 24px;
   position: absolute;
   top: 2px;
-  left: 2px;
+  left: 3px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -491,6 +505,10 @@ h2 {
   background-color: #c8aa86;
   cursor: pointer;
 }
+.donation-form__button-submit:hover {
+  -webkit-box-shadow: 9px 11px 34px -11px rgba(0, 0, 0, 0.75);
+          box-shadow: 9px 11px 34px -11px rgba(0, 0, 0, 0.75);
+}
 .donation-form__count {
   padding: 17px 27px 17px 12px;
   margin-bottom: 17px;
@@ -499,8 +517,8 @@ h2 {
   outline: none;
 }
 .donation-form__count[placeholder] {
-  color: #464646;
   font-family: "Railway", Helvetica, sans-serif;
+  color: #464646;
   font-size: 16px;
   font-weight: 400;
 }
@@ -563,7 +581,6 @@ h2 {
 }
 
 .footer {
-  margin-bottom: 100px;
   padding: 0 63px 8px 11px;
   background-color: #000;
   color: #c4c4c4;
@@ -587,15 +604,6 @@ h2 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-}
-.footer__title span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 35px;
-  height: 2px;
-  background-color: #c8aa86;
 }
 .footer__title_first {
   margin-bottom: 18px;
@@ -686,4 +694,7 @@ h2 {
   height: 42px;
   border-radius: 0px 5px;
   background-color: #c8aa86;
+}
+.footer-arrow__link:hover {
+  background-color: rgba(200, 170, 134, 0.4);
 }
