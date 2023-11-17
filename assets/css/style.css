@@ -505,6 +505,10 @@ h2 {
   background-color: #c8aa86;
   cursor: pointer;
 }
+.donation-form__button-submit:hover {
+  -webkit-box-shadow: 9px 11px 34px -11px rgba(0, 0, 0, 0.75);
+          box-shadow: 9px 11px 34px -11px rgba(0, 0, 0, 0.75);
+}
 .donation-form__count {
   padding: 17px 27px 17px 12px;
   margin-bottom: 17px;
@@ -513,8 +517,8 @@ h2 {
   outline: none;
 }
 .donation-form__count[placeholder] {
-  color: #464646;
   font-family: "Railway", Helvetica, sans-serif;
+  color: #464646;
   font-size: 16px;
   font-weight: 400;
 }
@@ -577,7 +581,6 @@ h2 {
 }
 
 .footer {
-  margin-bottom: 100px;
   padding: 0 63px 8px 11px;
   background-color: #000;
   color: #c4c4c4;
@@ -601,15 +604,6 @@ h2 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-}
-.footer__title span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 35px;
-  height: 2px;
-  background-color: #c8aa86;
 }
 .footer__title_first {
   margin-bottom: 18px;
@@ -700,4 +694,7 @@ h2 {
   height: 42px;
   border-radius: 0px 5px;
   background-color: #c8aa86;
+}
+.footer-arrow__link:hover {
+  background-color: rgba(200, 170, 134, 0.4);
 }
