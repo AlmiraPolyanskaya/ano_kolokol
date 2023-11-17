@@ -24,19 +24,13 @@
   <div class="container">
 
     <!-- Секция Альмиры - начало -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
       <div class="header__wrapper">
         <div class="header__logo">
           <img src="./assets/images/header_main/logo.png" alt="Логотип" />
         </div>
-        <nav class="header__menu header__hamburger-menu">
-
-          <input id="header__menu__toggle" type="checkbox" />
-          <label class="header__menu__btn" for="header__menu__toggle">
-            <span></span>
-          </label>
-
+        <nav class="header__menu">
           <ul class="header__menu__list">
             <li class="header__menu__list__item">
               <a href="#">О нас</a>
@@ -54,112 +48,177 @@
 
         </nav>
         <div class="header__socials">
-          <button class="header__socials__button-telegram"><img src="./assets/images/header_main/telegram-icon.png"
-              alt="Телеграм"></button>
-          <button class="header__socials__button-vkontakte"><img src="./assets/images/header_main/vk-icon.png"
-              alt="Вконтакте"></button>
+          <div class="header__socials__telegram"><a href="https://t.me/kolokol196"><img
+                src="./assets/images/header_main/telegram-icon.png" alt="Телеграм"></a></div>
+          <div class="header__socials__vkontakte"><a href=""><img src="./assets/images/header_main/vk-icon.png"
+                alt="Вконтакте"></a>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="main-content">
+    <section class="main-content" id="main-content">
       <div class="main-content__wrapper">
         <div class="main-content__info">
           <div class="main-content__info__title__wrapper">
             <h1 class="main-content__info__title">Проект “Колокол”</h1>
+          </div><br>
+          <div class="main-content__info__text__wrapper">
+            <p class="main-content__info__text">
+              Мы - Автономная Некоммерческая Организация "КОЛОКОЛ".<br>
+              Наша команда возрождает <span class="bold-text">профессию жестянщика</span> и искусство изготовления <span
+                class="bold-text">фальцевой кровли</span></p>
           </div>
-          <p class="main-content__info__text">
-            Мы - Автономная Некоммерческая Организация "КОЛОКОЛ".
-            Наша команда возрождает <span class="bold-text">профессию жестянщика</span> и искусство изготовления <span
-              class="bold-text">фальцевой кровли</span>
-          </p>
         </div>
       </div>
 
     </section>
 
-    <section class="help">
+    <section class="help" id="help">
       <div class="help__wrapper">
 
-        <br class="help__input-form">
-        <h3 class="help__input-form__heading">Поддержите наш проект</h3>
-        <input type="text" class="help__input-form__donation" placeholder="1000 ₽">
-        <input id="help__input-form__checkbox" type="checkbox" />
-        <p>Помогать проекту ежемесячно</p><br>
-        <div class="help__input-form__action">
-          <button class="button-1"><a href="">Поддержать</a></button>
-          <input type="submit" value="Submit">
+        <div class="help__input-form">
+          <h3 class="help__input-form__heading">Поддержите наш проект</h3>
+          <div class="help__input-form__donation__wrapper">
+            <input type="text" class="help__input-form__donation" placeholder="1000 ₽">
+            <div class="help__input-form__checkbox__wrapper"><input id="help__input-form__checkbox" type="checkbox" />
+            </div>
+            <p>Помогать проекту ежемесячно</p>
+          </div>
+          <div class="help__input-form__action">
+            <button class="button"><a href="">Поддержать</a></button>
+          </div>
         </div>
-      </div>
 
-      <div class="help__application-form">
-        <p class="help__application-form__text">Есть вопросы или предложения? Звоните!</p>
-        <p class="help__application-form__phone">+79025001495</p>
-        <div class="help__application-form__action">
-          <button class="button-1"><a href="">Или напишите нам прямо сейчас</a></button>
+        <div class="help__application-form">
+          <p class="help__application-form__text">Есть вопросы или предложения? Звоните!</p>
+          <p class="help__application-form__phone">+79025001495</p>
+          <div class="help__application-form__action">
+            <button class="button"><a href="mailto:kolokol96.82@mail.ru">Или напишите нам прямо сейчас</a></button>
+          </div>
         </div>
+
       </div>
+    </section>
 
-  </div>
-  </section>
+    <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
+    <!-- Секция Альмиры - конец -->
 
-  <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
-  <!-- Секция Альмиры - конец -->
-
-  <!-- Начало секции "О нас" (Виталия) -->
+    <!-- Начало секции "О нас" (Виталия) -->
   <section class="">
-    <div class="_wrapper"></div>
-  </section>
+      <div class="_wrapper"></div>
+    </section>
   <!-- Конец секции "О нас" (Виталия) -->
 
-  <section class="">
-    <div class="_wrapper"></div>
-  </section>
+    <section class="">
+      <div class="_wrapper"></div>
+    </section>
 
-  <section class="">
-    <div class="_wrapper"></div>
-  </section>
+    <section class="">
+      <div class="_wrapper"></div>
+    </section>
 
-  <section class="events">
-    <img src="./assets/images/events/rectangle.png" alt="rectangle">
-    <div class="event_wrapper">
-      <div class="event_wrapper-content">
-        <h3>Наши мероприятия</h3>
-        <div class="event_wrapper-text">
-          <p>Здесь в ближайшее время появится информация о наших событиях грядущих мероприятиях!
-          </p>
+
+    <!-- Секция Татьяны - начало -->
+    <section class="events">
+      <div class="event_wrapper">
+        <img src="./assets/images/events/rectangle.png" alt="rectangle">
+        <div class="event_wrapper-content">
+          <div class="event_wrapper-title">
+            <h2>Наши мероприятия</h2>
+          </div>
+          <div class="event_wrapper-text">
+            <p>Здесь в ближайшее время появится информация о наших событиях грядущих мероприятиях!
+            </p>
+          </div>
+        </div>
+
+        <div class="event_wrapper-foto">
+          <img src="./assets/images/events/remeslo.png" alt="remeslo">
+        </div>
+        <img src="./assets/images/events/rectangle.png" alt="rectangle">
+      </div>
+    </section>
+
+    <section class="smi">
+      <div class="smi_wrapper">
+        <div class="smi_wrapper-foto">
+          <img src="./assets/images/events/master.png" alt="master">
+        </div>
+        <div class="smi_wrapper-content2">
+          <h2>Мы в СМИ и на ТВ</h2>
+          <div class="smi_wrapper-text">
+            <a class="smi_wrapper-link" href="О нашем мастере Илье Емельянове"></a>
+            <p>Уральский мастер хочет возродить профессию жестянщика</p>
+            <p>Наша работа в Храме Покрова Пресвятой Богородицы, п. Сарапулка</p>
+          </div>
+        </div>
+        <div class="pattern">
+          <img src="./assets/images/events/pattern.png" alt="pattern">
         </div>
       </div>
-      <div class="event_wrapper-foto">
-        <img src="./assets/images/events/remeslo.png" alt="remeslo">
-      </div>
-    </div>
-  </section>
+    </section>
+    <!-- Секция Татьяны - конец -->
 
-  <section class="smi">
-    <div class="smi_wrapper">
-      <div class="smi_wrapper-foto">
-        <img src="./assets/images/events/master.png" alt="master">
-      </div>
-      <div class="smi_wrapper-content2">
-        <h3>Мы в СМИ и на ТВ</h3>
-        <div class="smi_wrapper-text">
-          <a class="smi_wrapper-link" href="О нашем мастере Илье Емельянове"></a>
-          <p>Уральский мастер хочет возродить профессию жестянщика</p>
-          <p>Наша работа в Храме Покрова Пресвятой Богородицы, п. Сарапулка</p>
+    <!-- Секция Катерины - начало -->
+    <section class="donate donate__margin">
+      <div class="donate__wrapper">
+        <div class="donation-form donate__form">
+          <h3 class="donation-form__title">Присоединиться к поддержке</h3>
+          <form class="donation-form__form" action="#" method="post">
+            <div class="donation-form__buttons">
+              <button class="donation-form__button">50 ₽</button>
+              <button class="donation-form__button">100 ₽</button>
+              <button class="donation-form__button">250 ₽</button>
+              <button class="donation-form__button">500 ₽</button>
+              <button class="donation-form__button">1000 ₽</button>
+              <button class="donation-form__button">2500 ₽</button>
+            </div>
+            <input class="donation-form__count" type="text" placeholder="1000 ₽">
+            <div class="donation-form__help">
+              <input class="donation-form__help-input" type="checkbox" name="donate" id="donate" value="donate">
+              <label class="donation-form__help-label" for="donate">Помогать фонду ежемесячно</label>
+            </div>
+            <button class="donation-form__button-submit" type="submit">Перевести 1000 ₽</button>
+            <p class="donation-form__text">10000 человек уже поддержало нас</p>
+            <a class="donation-form__link" href="#">Также вы можете использовать наш расчетный счет</a>
+          </form>
+        </div>
+        <div class="donate-image">
+          <img src="./assets/images/donate/donation-foto.png" alt="Donate">
         </div>
       </div>
-      <img src="./assets/images/events/pattern.png" alt="pattern">
-  </section>
+    </section>
 
-  <section class="">
-    <div class="_wrapper"></div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer__wrapper">
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer-logo">
+          <img src="./assets/images/footer/logo_footer.png" alt="Logo">
+          <p>Copyright © АНО Колокол 2023</p>
+        </div>
+        <nav class="footer-nav">
+          <h4 class="footer__title footer__title_first">Меню</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наша деятельность</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши мероприятия</a></li>
+          </ul>
+        </nav>
+        <div class="footer-socials">
+          <h4 class="footer__title footer__title_second">Мы в соц. сетях</h4>
+          <div class="footer-socials__list">
+            <a href="#"><img src="./assets/images/footer/telegram-icon.png" alt="Telegram"></a>
+            <a href="#"><img src="./assets/images/footer/vk-icon.png" alt="VK"></a>
+          </div>
+        </div>
+        <div class="footer-arrow">
+          <a class="footer-arrow__link" href="#">
+            <img src="./assets/images/footer/arrow-to-top.svg" alt="Go To Top">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Секция Катерины - конец -->
 
   </div>
 </body>
