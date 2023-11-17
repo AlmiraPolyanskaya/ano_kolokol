@@ -5,6 +5,10 @@
   background-color: #000;
   color: $light-gray;
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrap {
     @include flex-space-between;
     align-items: start;
   }
@@ -47,12 +51,6 @@
   max-width: 228px;
   & img {
     width: 100%;
-  }
-  & p {
-    padding-left: 25px;
-    font-family: $text-font;
-    font-size: 12px;
-    font-weight: 400;
   }
 }
 
@@ -97,4 +95,12 @@
       background-color: $hover-color;
     }
   }
+}
+
+.footer__copyright {
+  margin: 0;
+  padding-left: 25px;
+  font-family: $text-font;
+  font-size: 12px;
+  font-weight: 400;
 }
