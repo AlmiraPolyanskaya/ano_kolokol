@@ -6,8 +6,7 @@
     margin-top: 20px;
   }
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     align-items: center;
     gap: 40px;
     padding: 24px 110px;
@@ -21,7 +20,7 @@
 .donation-form {
   &__title {
     max-width: 414px;
-    color: #c8aa86;
+    color: $beige;
     font-family: $heading2-font;
     font-size: 50px;
     font-weight: 400;
@@ -58,9 +57,12 @@
       font-size: 16px;
       font-weight: 400;
       border-radius: 4.8px;
-      border: 1px solid #c8aa86;
-      background-color: #c8aa86;
+      border: 1px solid $beige;
+      background-color: $beige;
       cursor: pointer;
+      &:hover {
+        box-shadow: 9px 11px 34px -11px rgba(0, 0, 0, 0.75);
+      }
     }
   }
   &__count {
@@ -70,8 +72,8 @@
     border: none;
     outline: none;
     &[placeholder] {
-      color: #464646;
       font-family: $text-railway;
+      color: #464646;
       font-size: 16px;
       font-weight: 400;
     }
