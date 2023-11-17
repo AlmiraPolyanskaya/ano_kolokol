@@ -5,9 +5,6 @@
     <img src="./assets/images/header_main/logo.png" alt="Logo">
   </a>
   <h3 align="center">АНО "Колокол"</h3>
-  <p align="center">
-Мы - Автономная Некоммерческая Организация "КОЛОКОЛ". 
-Наша команда возрождает профессию жестянщика и искусство изготовления  фальцевой кровли</p>
     <br />
 
 </div>
@@ -30,9 +27,7 @@
 
 Это наш второй учебный проект по верстке сайта по макету Figma и отлчается он то прошлого проекта тем, что теперь нам было нужно создать макет самим, поскольку у заказчика его не было.
 
-Итоговый макет, по которому наша команда осуществляла верстку
-
-(<https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(2-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F)?type=design&node-id=0%3A1&mode=design&t=br2aC7Nz36p3XmIa-1> "Макет")
+Итоговый макет, по которому наша команда осуществляла верстку [![Product Screen Shot][product-screenshot]](<https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(2-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F)?type=design&node-id=1%3A283&mode=design&t=Jyg0XzNpVhEBb7oh-1> "Макет")
 
 В этом проекте мы сделали базовую верстку сайта шириной 1280px.
 Далее мы планируем добавить адаптивность для экранов разных размеров: телефонов, планшетов, ноутбуков и больших десктопов.
@@ -41,10 +36,10 @@
 
 Здесь представлены инструменты, использованные в работе.
 
-<img src="./assets/images/readmi/html.svg" alt="HTML5" width="135">  
+<img src="./assets/images/readmi/html.svg" alt="HTML5" width="100">  
 <img src="./assets/images/readmi/css.svg" alt="CSS3" width="100">
-<img src="./assets/images/readmi/figma.svg" alt="Figma" width="85" styles="margin-right:2vw">
-<img src="./assets/images/readmi/sass.svg" alt="SASS" width="">
+<img src="./assets/images/readmi/figma.svg" alt="Figma" width="100" styles="margin-right:2vw">
+<img src="./assets/images/readmi/sass.svg" alt="SASS" width="100">
 
 ## Демонстрация
 
@@ -70,7 +65,7 @@ Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[product-screenshot]: ./img/Subtract.png
+[product-screenshot]: ./assets/images/header_main/logo.png
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
