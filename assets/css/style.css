@@ -497,6 +497,7 @@
 
 .description {
   margin: 20px 0;
+  position: relative;
 }
 .description__wrapper {
   background-color: rgba(200, 170, 134, 0.2);
@@ -517,7 +518,6 @@
   font-size: 90px;
   margin: 15px 0 0 0;
 }
-
 .description__first-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,13 +539,15 @@
   width: 30%;
   max-width: 30%;
   position: absolute;
-  right: 200px;
+  right: 7%;
+  top: 10%;
   z-index: 0;
+  display: inline;
 }
 .description__picture img {
   width: 100%;
   margin-top: 5%;
-  max-width: 410px;
+  max-width: 409px;
 }
 
 .mission-list {
@@ -554,7 +556,6 @@
 }
 .mission-list__wrapper {
   width: 75%;
-  position: relative;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   padding-block: 20px;
@@ -581,17 +582,17 @@
   width: 70%;
   padding-block: 50px;
 }
-.description__second-container ul {
-  list-style-type: none;
-  padding: 0px 25px 15px 25px;
-}
-
 .description__titles_small {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   margin: 30px 0;
+}
+
+.description__second-container ul {
+  list-style-type: none;
+  padding: 0px 25px 15px 25px;
 }
 
 .second-container__inner-wrapper {
@@ -674,23 +675,15 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .description__icons-list-item img {
   border-radius: 15px;
-  background: transparent;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
 }
-.description__icons-list-item:hover {
-  border-radius: 15px;
-  background: transparent;
-  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
-          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
-}
-.description__icons-list-item a:hover {
-  border-radius: 15px;
-  background: transparent;
-  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
-          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5019607843);
+.description__icons-list-item img:hover {
+  -webkit-box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5019607843);
 }
 
 .action_wrapper {
