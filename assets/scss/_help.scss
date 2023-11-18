@@ -59,8 +59,6 @@
   }
 }
 
-/* Help-section customised checkbox */
-
 .help__input-form__checkbox {
   position: absolute;
   opacity: 0;
@@ -103,8 +101,6 @@
 .help__input-form__checkbox:checked ~ .help__input-form__checkmark:after {
   display: block;
 }
-
-/* End of customised checkbox */
 
 .help__input-form__action {
   margin-top: 22px;
