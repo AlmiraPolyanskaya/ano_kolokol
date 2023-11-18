@@ -109,7 +109,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: flex-end;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .work__image_1{
@@ -218,7 +218,6 @@
 .work_name_2{
     grid-row: 3/4;
     grid-column: 3/5;
-
     color: #C8AA86;
     font-family: Edisson;
     font-size: 50px;
@@ -226,7 +225,13 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.work_name_text{
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: $shadow;
 }
 
 .work__image_5{
