@@ -49,9 +49,6 @@
 
 .footer-logo {
   max-width: 228px;
-  & img {
-    width: 100%;
-  }
 }
 
 .footer-nav {
@@ -80,30 +77,47 @@
     display: flex;
     align-items: center;
     gap: 17px;
+    & a {
+      @include flex-center;
+      align-items: center;
+      width: 47px;
+      height: 51px;
+    }
+    &_tg:hover {
+      background-color: rgba(200, 170, 134, 0.4);
+      border-radius: 12px;
+    }
+    &_vk:hover {
+      background-color: rgba(200, 170, 134, 0.4);
+      border-radius: 12px;
+    }
   }
 }
 
 .footer-arrow {
   position: fixed;
-  right: 100px;
-  bottom: 38px;
+  right: 112px;
+  bottom: 28px;
   z-index: 99;
   &__link {
     @include flex-center;
     align-items: center;
-    width: 47px;
-    height: 42px;
+    width: 77px;
+    height: 72px;
     border-radius: 0px 5px;
     background-color: $beige;
     &:hover {
       background-color: $hover-color;
+    }
+    & img {
+      width: 24px;
     }
   }
 }
 
 .footer__copyright {
   margin: 0;
-  padding-left: 25px;
+  padding-left: 37px;
   font-family: $text-font;
   font-size: 12px;
   font-weight: 400;
