@@ -1,113 +1,118 @@
 @import "_variables";
+@import "_mixins";
+@import "_placeholder _selectors";
 
-.event {
-    margin-top: 20px;
-}
+.events {
+  display: flex;
 
-.event_wrapper {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: $bgc-beige;
-    height: 458px;
-}
-
-.event_wrapper-content {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 380px;
-    gap: 10px;
-}
-
-.event_wrapper_content-title {
-    font-family: $heading1-font;
-    max-width: 453.376px;
-    color: $brown;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 57.6px; /* 115.2% */
-}
-
-.event_content-text-wrapper {
-    display: block;
-    max-height: 100%;
-    padding: 15px 20px 15px 15px;
-    box-sizing: border-box;
-    margin-top: -5px;
-    margin-left: 40px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.60);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.event_content-text {
-    color: $gray;
-    font-family: $text-font;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 200% */   
-}
-
-.event_wrapper-foto {
-    display: flex;
-    justify-content: center;
+  &__foto {
     width: 100%;
-    box-sizing: border-box;
+    margin-left: 5px;
+    margin-top: 81px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__pattern {
+    height: 100%;
+  }
+
+  &__wrapper {
+    @include flex-center;
+    align-items: flex-start;
+    max-width: calc(100% - 152px);
+    background-color: $bgc_light-beige;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 20.3px 94px 132px;
+
+    &__title__wrapper {
+      margin-left: 8px;
+      margin-top: 36px;
+    }
+
+    &__title {
+      @extend %title;
+    }
+
+    &__text-wrapper {
+      margin-top: 52.2px;
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 4px 4px 0px $shadow;
+    }
+
+    &__text {
+      @include form-margin-0;
+      font-size: 20px;
+      line-height: 200%;
+      margin: 22px 19px 21px 22px;
+    }
+  }
 }
 
 .smi {
-    margin-top: 20px;
-}
+  margin: 38px 0 20px 0;
 
-.smi_wrapper {
+  &__wrapper {
     display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: $light-gray;
-    height: 458px;
-}
+    max-width: calc(100% - 154px);
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 4px 0px $shadow;
+  }
 
-.smi_wrapper-foto {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;   
-}
+  &__foto {
+    margin: 24px 0 24px 107px;
+    & > img {
+      width: 100%;
+    }
+  }
 
-.smi_wrapper-content {
+  &__content {
     display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center; 
+    align-items: flex-start;
     flex-direction: column;
-    height: 340px;
-    gap: 10px;
+    margin-left: 71px;
+
+    &__title__wrapper {
+      padding: 7px 16px;
+      background-color: $beige;
+      margin-bottom: 44px;
+      margin-top: 25px;
+      box-shadow: 0px 4px 4px 0px $shadow;
+    }
+
+    &__title {
+      @extend %title;
+    }
+
+    &__link {
+      margin-bottom: 32px;
+      margin-left: -2px;
+      max-width: 508px;
+
+      & > a {
+        text-decoration: none;
+        line-height: 100%;
+        color: black;
+        font-size: 25px;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
 }
 
-.smi_wrapper_title {
-    font-family: $heading1-font;
-    max-width: 453.376px;;
-    color: $brown;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 57.6px; /* 115.2% */
-}
-
-.smi_text-wraper {  
-    width: 508px;
-    height: 61px;
-    color: $brown;
-    font-family: $text-font;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 25px */
+.pattern__basic {
+  @extend %horizontal;
+  margin-top: 25px;
 }

@@ -54,28 +54,7 @@ _Далее мы планируем добавить адаптивность д
 
 ## Инструменты
 
-_В этом проекте мы впервые использовали при написании кода препроцессор SASS:_
-
-```
-@import "_variables";
-@import "_mixins";
-
-.pattern {
-  @include flex-center;
-  max-width: 1280px;
-}
-```
-
-```
-// Цвет шрифта
-$beige: #c8aa86;
-$brown: #603c22;
-$gray: #59606c;
-$light-gray: #c4c4c4;
-$light-stroke_color: rgba(45, 48, 56, 0.15);
-$dark-stroke_color: rgba(45, 48, 56, 0.5);
-$shadow: rgba(0, 0, 0, 0.25);
-```
+_В этом проекте мы впервые использовали при написании кода препроцессор SASS, в частности: вложенность, переменные, шаблонные селекторы, миксины:_
 
 ```
 .header__menu__list {
@@ -100,7 +79,57 @@ $shadow: rgba(0, 0, 0, 0.25);
         weight: 600;
       }
     }
+
+    &:hover {
+      background-color: $hover-color;
+      outline-style: none;
+    }
   }
+}
+```
+
+```
+// Цвет шрифта
+$beige: #c8aa86;
+$brown: #603c22;
+$gray: #59606c;
+$light-gray: #c4c4c4;
+$light-stroke_color: rgba(45, 48, 56, 0.15);
+$dark-stroke_color: rgba(45, 48, 56, 0.5);
+$shadow: rgba(0, 0, 0, 0.25);
+```
+
+```
+  &__wrapper {
+    @include flex-center;
+    align-items: flex-start;
+    max-width: calc(100% - 152px);
+    background-color: $bgc_light-beige;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 20.3px 94px 132px;
+
+    &__title__wrapper {
+      margin-left: 8px;
+      margin-top: 36px;
+    }
+
+    &__title {
+      @extend %title;
+    }
+```
+
+```
+@import "_variables";
+@import "_mixins";
+
+.pattern {
+  @include flex-center;
+  max-width: 1280px;
 }
 ```
 
