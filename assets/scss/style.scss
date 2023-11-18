@@ -1,12 +1,13 @@
 @import "base";
 @import "_variables";
+@import "_placeholder _selectors";
 @import "_mixins";
-@import "_work";
-@import "_events and smi";
+
 @import "_header";
 @import "_main";
 @import "_help";
 @import "_description";
+@import "_work";
+@import "_events and smi";
 @import "donate";
 @import "footer";
-@import "_placeholder _selectors";

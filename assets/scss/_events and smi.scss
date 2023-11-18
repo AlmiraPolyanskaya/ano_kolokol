@@ -9,6 +9,10 @@
     width: 100%;
     margin-left: 5px;
     margin-top: 81px;
+
+    & > img {
+      width: 100%;
+    }
   }
 
   &__pattern {
