@@ -15,9 +15,7 @@
         font-size: 90px;
         margin: 15px 0 0 0;
     }
-}
 
-.description {
     &__first-container {
         display: flex;
         flex-direction: column;
@@ -32,12 +30,16 @@
         margin-bottom: 50px;
     }
 
+    position: relative;
+
     &__picture {
         width: 30%;
         max-width: 30%;
         position: absolute;
-        right: 200px;
+        right: 7%;
+        top: 10%;
         z-index: 0;
+        display: inline;
     
         img { 
             width: 100%;
@@ -53,7 +55,6 @@
 
     &__wrapper {
         width: 75%;
-        position: relative;
         background-color: $bgc_white;
         border-radius: 20px;
         padding-block: 20px;
@@ -68,23 +69,26 @@
     }
 }
 
-.description__second-container {
+.description {
+    
+    &__second-container {
     @include description-boxes-align;
     width: 70%;
     padding-block: 50px;
-
-    ul {
-        list-style-type: none;
-        padding: 0px 25px 15px 25px;
     }
-}
 
-.description__titles_small {
+    &__titles_small {
     font-family: $text-font;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
     margin: 30px 0;
+    }
+}
+
+.description__second-container ul {
+    list-style-type: none;
+    padding: 0px 25px 15px 25px;
 }
 
 .second-container__inner-wrapper {
@@ -132,24 +136,14 @@
     display: flex;
     width: 35%;
     justify-content: space-between;
+    }
 
-    &-item {
-        img {
-            border-radius: 15px;
-            background: transparent;
-            box-shadow: 0px 4px 4px #00000080;
-        }
-    
-        &:hover {
-            border-radius: 15px;
-            background: transparent;
-            box-shadow: 0px 4px 7px #00000080;
-        }
-        
-        a:hover {
-            border-radius: 15px;
-            background: transparent;
-            box-shadow: 0px 4px 7px #00000080;
-        }
+.description__icons-list-item img {
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #00000080;
+
+    &:hover {
+        box-shadow: 0px 7px 4px #00000080;
     }
 }
+
