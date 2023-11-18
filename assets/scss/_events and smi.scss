@@ -1,5 +1,6 @@
 @import "_variables";
 @import "_mixins";
+@import "_placeholder _selectors";
 
 .events {
   display: flex;
@@ -33,12 +34,7 @@
     }
 
     &__title {
-      @include form-margin-0;
-      font-family: $heading1-font;
-      color: $brown;
-      text-shadow: 1px 1px 1px $dark-stroke_color;
-      font-size: 50px;
-      line-height: 115.2%;
+      @extend %title;
     }
 
     &__text-wrapper {
@@ -58,51 +54,61 @@
 }
 
 .smi {
-  margin-top: 20px;
+  margin: 38px 0 20px 0;
+
+  &__wrapper {
+    display: flex;
+    max-width: calc(100% - 154px);
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 4px 0px $shadow;
+  }
+
+  &__foto {
+    margin: 24px 0 24px 107px;
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 71px;
+
+    &__title__wrapper {
+      padding: 7px 16px;
+      background-color: $beige;
+      margin-bottom: 44px;
+      margin-top: 25px;
+      box-shadow: 0px 4px 4px 0px $shadow;
+    }
+
+    &__title {
+      @extend %title;
+    }
+
+    &__link {
+      margin-bottom: 32px;
+      margin-left: -2px;
+      max-width: 508px;
+
+      & > a {
+        text-decoration: none;
+        line-height: 100%;
+        color: black;
+        font-size: 25px;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
 }
 
-.smi_wrapper {
-  @include flex-center;
-  max-width: 100%;
-  align-items: center;
-  background-color: $light-gray;
-  height: 458px;
-}
-
-.smi_wrapper-foto {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.smi_wrapper-content {
-  display: flex;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 340px;
-  gap: 10px;
-}
-
-.smi_wrapper_title {
-  font-family: $heading1-font;
-  max-width: 453.376px;
-  color: $brown;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 57.6px; /* 115.2% */
-}
-
-.smi_text-wraper {
-  width: 508px;
-  height: 61px;
-  color: $brown;
-  font-family: $text-font;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 25px */
+.pattern__basic {
+  @extend %horizontal;
+  margin-top: 25px;
 }

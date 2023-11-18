@@ -24,7 +24,7 @@
 
     <!-- Секция Альмиры - начало -->
     <header class="header" id="header">
-      <div class="pattern"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
+      <div class="pattern__basic"><img src="./assets/images/header_main/header-pattern.png" alt="Узор" /></div>
       <div class="header__wrapper">
         <div class="header__logo">
           <img src="./assets/images/header_main/logo.png" alt="Логотип" />
@@ -76,10 +76,13 @@
         <div class="help__input-form">
           <h3 class="help__input-form__heading">Поддержите наш проект</h3>
           <div class="help__input-form__donation__wrapper">
-            <input type="text" class="help__input-form__donation" placeholder="1000 ₽">
-            <div class="help__input-form__checkbox__wrapper"><input id="help__input-form__checkbox" type="checkbox" />
+            <input type="text" class="help__input-form__count" placeholder="1000 ₽">
+            <div class="help__input-form__donation">
+              <label class="help__input-form__donation-label">Помогать проекту ежемесячно
+                <input class="help__input-form__checkbox" type="checkbox" />
+                <span class="help__input-form__checkmark"></span>
+              </label>
             </div>
-            <p>Помогать проекту ежемесячно</p>
           </div>
           <div class="help__input-form__action">
             <button class="button"><a href="">Поддержать</a></button>
@@ -95,7 +98,7 @@
         </div>
     </section>
 
-    <div class="pattern">
+    <div class="pattern__basic">
       <img src="./assets/images/header_main/header-pattern.png" alt="Узор" />
     </div>
     <!-- Секция Альмиры - конец -->
@@ -311,8 +314,8 @@
     <!-- Секция Татьяны - начало -->
     <section class="events" id="events">
       <img class="events__pattern" src="./assets/images/events and smi/rectangle.png" alt="rectangle">
-      <div class="events__wrapper">
 
+      <div class="events__wrapper">
         <div class="events__content">
           <div class="events__content__title__wrapper">
             <h2 class="events__content__title">Наши мероприятия</h2>
@@ -326,32 +329,44 @@
         <div class="events__foto">
           <img src="./assets/images/events and smi/remeslo.png" alt="remeslo">
         </div>
-
       </div>
+
       <img class="events__pattern" src="./assets/images/events and smi/rectangle.png" alt="rectangle">
     </section>
 
     <section class="smi" id="smi">
-      <div class="smi_wrapper">
-        <div class="smi_wrapper-foto">
+      <div class="smi__wrapper">
+        <div class="smi__foto">
           <img src="./assets/images/events and smi/master.png" alt="master">
         </div>
-        <div class="smi_wrapper-content">
-          <h2 class="smi_wrapper_title">Мы в СМИ и на ТВ</h2>
-          <div class="smi_wrapper-text">
-            <div class="smi_link">
-              <a class="smi_wrapper-link" href="https://silabgo.ru/news/actual/kogda-sluchaj-privodit-k-prizvaniyu">О
-                нашем мастере Илье Емельянове</a>
+        <div class="smi__content">
+          <div class="smi__content__title__wrapper">
+            <h2 class="smi__content__title">Мы в СМИ и на ТВ</h2>
+          </div>
+          <div class="smi__content__links">
+
+            <div class="smi__content__link">
+              <a href="https://silabgo.ru/news/actual/kogda-sluchaj-privodit-k-prizvaniyu">О
+                нашем мастере<br />Илье Емельянове</a>
             </div>
-            <div class="smi_text-wraper">
-              <p>Уральский мастер хочет возродить профессию жестянщика</p>
-              <p>Наша работа в Храме Покрова Пресвятой Богородицы, п. Сарапулка</p>
+
+            <div class="smi__content__link">
+              <a
+                href="https://ural.aif.ru/society/gnut_falec_uralskiy_master_hochet_vozrodit_professiyu_zhestyanshchika">Уральский
+                мастер хочет
+                возродить профессию жестянщика</a>
+            </div>
+
+            <div class="smi__content__link">
+              <a href="https://ok.ru/video/7151862483641">Наша работа в Храме Покрова
+                Пресвятой Богородицы, п. Сарапулка</a>
             </div>
           </div>
         </div>
-        <div class="pattern">
-          <img src="./assets/images/events and smi/pattern.png" alt="pattern">
-        </div>
+      </div>
+
+      <div class="pattern__basic">
+        <img src="./assets/images/header_main/header-pattern.png" alt="Узор" />
       </div>
     </section>
     <!-- Секция Татьяны - конец -->
@@ -372,7 +387,7 @@
             </div>
             <input class="donation-form__count" type="text" placeholder="1000 ₽">
             <div class="donation-form__help">
-              <label class="donation-form__help-label">Помогать фонду ежемесячно
+              <label class="donation-form__help-label">Помогать проекту ежемесячно
                 <input class="donation-form__help-input" type="checkbox" name="donate" value="donate">
                 <span class="donation-form__checkmark"></span>
               </label>
