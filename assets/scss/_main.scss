@@ -1,5 +1,6 @@
 @import "_variables";
 @import "_mixins";
+@import "_placeholder _selectors";
 
 .main-content {
   background: {
@@ -12,26 +13,26 @@
   margin-top: -1px;
   position: relative;
   z-index: 10;
-}
 
-.main-content__info__title__wrapper {
-  display: inline-flex;
-  height: 171px;
-  padding: 6px 16px 7px 16px;
-  box-sizing: border-box;
-  margin-top: 55px;
-  margin-left: 49px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 0px 5px;
-  background: $bgc-beige;
-  box-shadow: 0px 4px 4px 0px $shadow;
-  text-shadow: 0px 4px 4px $shadow;
-  position: relative;
-  z-index: 30;
+  &__info__title__wrapper {
+    display: inline-flex;
+    height: 171px;
+    padding: 6px 16px 7px 16px;
+    box-sizing: border-box;
+    margin-top: 55px;
+    margin-left: 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 5px;
+    background: $bgc-beige;
+    box-shadow: 0px 4px 4px 0px $shadow;
+    text-shadow: 0px 4px 4px $shadow;
+    position: relative;
+    z-index: 30;
+  }
 
-  .main-content__info__title {
+  &__info__title {
     color: #fff;
     font: {
       family: $heading1-font;
@@ -39,28 +40,31 @@
       weight: 400;
     }
     line-height: normal;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 0 2px rgba(45, 48, 56, 0.5),
+      0 2px 2px rgba(45, 48, 56, 0.5), -2px 0 2px rgba(45, 48, 56, 0.5),
+      0 -2px 2px rgba(45, 48, 56, 0.5);
+    -webkit-text-stroke: 1px rgba(45, 48, 56, 0.5);
   }
-}
 
-.main-content__info__text__wrapper {
-  display: inline-flex;
-  width: 466px;
-  height: 221px;
-  padding: 15px 22px 15px 16px;
-  box-sizing: border-box;
-  margin-top: -7px;
-  margin-left: 49px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 0px 10px;
-  background: rgba(32, 35, 40, 0.5);
-  box-shadow: 0px 4px 4px 0px $shadow;
-  position: relative;
-  z-index: 20;
+  &__info__text__wrapper {
+    display: inline-flex;
+    width: 466px;
+    height: 221px;
+    padding: 15px 22px 15px 16px;
+    box-sizing: border-box;
+    margin-top: -7px;
+    margin-left: 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 10px;
+    background: rgba(32, 35, 40, 0.5);
+    box-shadow: 0px 4px 4px 0px $shadow;
+    position: relative;
+    z-index: 20;
+  }
 
-  .main-content__info__text {
+  &__info__text {
     color: white;
     font-size: 20px;
     line-height: 170%;

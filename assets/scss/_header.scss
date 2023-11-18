@@ -1,13 +1,9 @@
 @import "_variables";
 @import "_mixins";
+@import "_placeholder _selectors";
 
-.pattern {
-  @include flex-center;
-  max-width: 1280px;
-}
-
-.pattern > img {
-  max-width: 100%;
+.pattern__basic {
+  @extend %horizontal;
 }
 
 .header__wrapper {
@@ -74,7 +70,7 @@
     }
   }
 
-  .header__socials__vkontakte {
+  &__vkontakte {
     box-sizing: content-box;
     width: 57px;
     height: 54px;
