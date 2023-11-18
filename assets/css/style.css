@@ -921,7 +921,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 600px;
+  max-width: 609px;
   max-height: 400px;
   padding-right: 15px;
   border-right: 1px solid black;
@@ -938,6 +938,7 @@
 .work_name_2 {
   grid-row: 3/4;
   grid-column: 3/5;
+  padding-left: 15px;
   color: #C8AA86;
   font-family: Edisson;
   font-size: 50px;
