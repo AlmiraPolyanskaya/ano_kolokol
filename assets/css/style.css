@@ -936,15 +936,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 417px;
+  width: 611px;
   height: 177.217px;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-right: 15px;
-  padding-bottom: px;
-  margin: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   border-right: 1px solid black;
   text-align: end;
   text-align: right;
@@ -967,7 +966,8 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   padding-left: 15px;
   color: #c8aa86;
   font-family: Edisson;
