@@ -1,5 +1,5 @@
 .action_wrapper {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -34,10 +34,8 @@
   text-align: justify;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
   line-height: 40px;
   letter-spacing: -0.5px;
-
   background-color: #f7f7f7;
 }
 
@@ -54,17 +52,15 @@
 }
 
 .work {
-  width: 1280px;
-  height: 1400px;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
+  clear: both;
 }
 
 .work_wrapper {
-  margin-top: -50px;
   padding: 25px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 20% 30% 20% 30%;
+  grid-template-rows: 15% 32% 21% 32%;
   align-items: center;
   justify-content: space-around;
   justify-items: stretch;
@@ -76,22 +72,25 @@
   align-items: center;
   padding-bottom: 19.85px;
 }
-.work__text{
+
+.work__text {
   height: 80.1px;
   width: 246px;
 }
+
 .work_text_1 {
   grid-row: 1/2;
   grid-column: 1/3;
   display: flex;
-  max-width: 609px;
-  max-height: 400px;
+  justify-self: flex-end;
+  align-self: center;
+
+  max-width: 417px;
 
   padding-right: 15px;
   border-right: 1px solid black;
-
   text-align: end;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
@@ -106,7 +105,7 @@
   max-height: 400px;
 
   display: flex;
-  align-items: flex-end;
+  align-self: flex-start;
 
   padding-left: 15px;
 
@@ -119,6 +118,10 @@
   text-transform: uppercase;
   -webkit-text-stroke: 0.1px $shadow;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.work_name_text {
+  margin-block-start: 45px;
 }
 
 .work__image_1 {
@@ -216,17 +219,13 @@
   grid-column: 1/3;
 
   display: flex;
-  width: 611px;
-  height: 177.217px;
-
-  align-items: center;
+  justify-self: flex-end;
+  width: 417px;
 
   padding-right: 15px;
-  
-  
-  margin-top: 60px;
+  margin-top: 55px;
   margin-bottom: 60px;
-  
+  margin-block-start: 65px;
 
   border-right: 1px solid black;
 
@@ -245,14 +244,13 @@
   grid-column: 3/5;
   width: 417px;
   height: 177.217px;
-  
+
   display: flex;
   align-items: flex-end;
   margin-top: 60px;
   margin-bottom: 60px;
   padding-left: 15px;
-  
-  
+
   color: #c8aa86;
   font-family: Edisson;
   font-size: 50px;
