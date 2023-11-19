@@ -40,8 +40,6 @@
 
 Данный проект создан для Автономной Некоммерческой Организации "Колокол", занимающейся **возрождением профессии жестянщика** и искусства изготовления **фальцевой кровли.**
 
-Это наш **второй учебный проект по верстке** сайта по макету Figma, и отлчается он от прошлого проекта тем, что на этот раз нам было нужно **создать макет самостоятельно**, поскольку у заказчика его не было.
-
 Итоговый макет, по которому наша команда осуществляла верстку [![Product Name Screen Shot][product-screenshot]](<https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(2-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F)?type=design&node-id=1%3A283&mode=design&t=Jyg0XzNpVhEBb7oh-1](https://www.figma.com/file/QAB23bTFS78wEAUSo6RAjK/%D0%90%D0%9D%D0%9E-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB-(last-version)?type=design&node-id=1%3A108&mode=design&t=6bJX251JqalI0Ebl-1)> "Макет")
 
 В этом проекте мы сделали базовую верстку сайта шириной 1280px.
@@ -53,90 +51,6 @@ _Далее мы планируем добавить адаптивность д
 <a name="built-with"></a>
 
 ## Инструменты
-
-_В этом проекте мы впервые использовали при написании кода препроцессор SASS, в частности: вложенность, переменные, шаблонные селекторы, миксины:_
-
-```
-.header__menu__list {
-  list-style: none;
-  @include flex-center;
-  flex-wrap: wrap;
-  padding-inline-start: 0;
-
-  &__item {
-    @include flex-center;
-    margin-right: 20px;
-    padding: 7px 15px;
-    cursor: pointer;
-
-    & a {
-      text-align: center;
-      color: $gray;
-      line-height: 22px;
-      text-decoration: none;
-      font: {
-        size: 20px;
-        weight: 600;
-      }
-    }
-
-    &:hover {
-      background-color: $hover-color;
-      outline-style: none;
-    }
-  }
-}
-```
-
-```
-// Цвет шрифта
-$beige: #c8aa86;
-$brown: #603c22;
-$gray: #59606c;
-$light-gray: #c4c4c4;
-$light-stroke_color: rgba(45, 48, 56, 0.15);
-$dark-stroke_color: rgba(45, 48, 56, 0.5);
-$shadow: rgba(0, 0, 0, 0.25);
-```
-
-```
-  &__wrapper {
-    @include flex-center;
-    align-items: flex-start;
-    max-width: calc(100% - 152px);
-    background-color: $bgc_light-beige;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0 20.3px 94px 132px;
-
-    &__title__wrapper {
-      margin-left: 8px;
-      margin-top: 36px;
-    }
-
-    &__title {
-      @extend %title;
-    }
-```
-
-```
-@import "_variables";
-@import "_mixins";
-
-.pattern {
-  @include flex-center;
-  max-width: 1280px;
-}
-```
-
-_А также впервые осуществляли процесс верстки сайта в разных ветках GIT_
-<br />
-<img src="./assets/images/git_readme/branches.png" alt="Git-Branches">
-<br />
 
 Здесь представлены инструменты, которые мы использовали в работе.
 <br />
@@ -154,8 +68,12 @@ _А также впервые осуществляли процесс верст
 
 Версия экрана 1280px
 <br />
-<img src="" alt="" width="">
+<img src="./assets/images/readmi/ano_kolokol.gif" alt="АНО Колокол" width="1280">
 <br />
+
+Мобильная версия появится позднее
+
+<img src="" alt="" width="">
 
 <!-- CONTACT -->
 
