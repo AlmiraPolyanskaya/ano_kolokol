@@ -766,7 +766,7 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  justify-items: start;
+  justify-items: stretch;
 }
 
 .image {
