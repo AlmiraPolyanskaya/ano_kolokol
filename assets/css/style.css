@@ -405,6 +405,10 @@
   background: rgb(200, 170, 134);
   cursor: pointer;
 }
+.help__input-form__action .button:hover {
+  -webkit-box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
 .help__input-form__action .button a {
   color: white;
   text-align: center;
@@ -471,6 +475,10 @@
   border-radius: 0px 5px;
   background: rgb(200, 170, 134);
   cursor: pointer;
+}
+.help__application-form__action .button:hover {
+  -webkit-box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
 .help__application-form__action .button a {
   color: white;
