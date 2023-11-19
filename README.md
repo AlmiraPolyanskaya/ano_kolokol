@@ -67,6 +67,7 @@ _Далее мы планируем добавить адаптивность д
 ## Реализация
 
 Версия экрана 1280px
+
 <br />
 <img src="./assets/images/readmi/ano_kolokol_gif.gif" alt="АНО Колокол" width="1280">
 <br />
