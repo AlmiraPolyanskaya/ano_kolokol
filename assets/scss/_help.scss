@@ -28,7 +28,7 @@
 
 .help__input-form__donation__wrapper {
   width: 510px;
-  margin-top: 14.2px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 
@@ -82,6 +82,7 @@
     width: 24px;
     background-color: grey;
     border: 1px grey solid;
+    border-radius: 4px;
 
     &:after {
       content: "";
@@ -103,7 +104,7 @@
 }
 
 .help__input-form__action {
-  margin-top: 22px;
+  margin-top: 13px;
 
   .button {
     @include flex-center;
@@ -148,15 +149,15 @@
 
   &__phone {
     @include form-margin-0;
-    margin-top: 7.2px;
+    margin-top: 2px;
     color: $beige;
     font-family: $text-railway;
     font-size: 28px;
-    line-height: 165%;
+    line-height: 135%;
   }
 
   &__action {
-    margin-top: 7.8px;
+    margin-top: 8px;
 
     .button {
       @include flex-center;
