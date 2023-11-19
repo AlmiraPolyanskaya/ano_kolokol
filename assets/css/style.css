@@ -753,7 +753,7 @@
 .work {
   width: 1280px;
   height: 1400px;
-  margin-bottom: 35px;
+  margin-bottom: 75px;
 }
 
 .work_wrapper {
@@ -808,6 +808,12 @@
   grid-column: 3/5;
   max-width: 600px;
   max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-left: 15px;
   color: #c8aa86;
   font-family: Edisson;
