@@ -101,8 +101,7 @@ _Нам очень понравилось участвоать в создани
 ## Ссылка
 
 Ссылка на проект
-
-Project Link: [https://github.com/AlmiraPolyanskaya/ano_kolokol](https://github.com/AlmiraPolyanskaya/ano_kolokol)
+https://github.com/AlmiraPolyanskaya/ano_kolokol
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
