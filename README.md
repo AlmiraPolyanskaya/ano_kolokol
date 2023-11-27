@@ -69,7 +69,7 @@ _Далее мы планируем добавить адаптивность д
 Версия экрана 1280px
 
 <br />
-<img src="./assets/images/readmi/ano_kolokol_gif.gif" alt="АНО Колокол" width="1280">
+<img src="./assets/images/git_readme/ano_kolokol_gif.gif" alt="АНО Колокол" width="1280">
 <br />
 
 Мобильная версия появится позднее
