@@ -24,7 +24,6 @@
     }
 
     &__title_middle {
-        font-family: $text-font;
         font-size: 35px;
         font-weight: bold;
         margin-bottom: 50px;
@@ -47,11 +46,14 @@
             max-width: 409px;
         }
     }
+
+    & ul {
+        list-style: none;
+    }
 }
 
 .mission-list {
-    list-style-image: url("../images/description/description_marker.svg");
-    padding: 0 50px 0 70px;
+    padding: 0 50px 0 30px;
 
     &__wrapper {
         width: 75%;
@@ -62,15 +64,16 @@
     }
 
     &__item {
-        font-family: $text-font;
         font-size: 30px;
-        font-weight: 400;
-        margin: 0 0 20px 0;
+        margin: 0 0 40px 0;
+        background-image: url("../images/description/description_marker.svg");
+        background-repeat: no-repeat;
+        padding-left: 70px;
     }
 }
 
+
 .description {
-    
     &__second-container {
     @include description-boxes-align;
     width: 70%;
@@ -78,7 +81,6 @@
     }
 
     &__titles_small {
-    font-family: $text-font;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -87,7 +89,6 @@
 }
 
 .description__second-container ul {
-    list-style-type: none;
     padding: 0px 25px 15px 25px;
 }
 
@@ -96,7 +97,6 @@
     justify-content: space-between;
 
     li {
-        font-family: $text-font;
         font-size: 16px;
     }
 }
@@ -109,17 +109,16 @@
     box-shadow: 0px 4px 5px $shadow;
 }
 
-.contacts-list {
+.description__contacts-list {
     @include description-boxes-justify;
 }
 
-.requisites-list {
+.description__requisites-list {
     @include description-boxes-justify;
     height: 60%;
 }
 
 .description__social-media {
-    
     width: 80%;
     background-color: $bgc_light-white;
     border-radius: 40px;
@@ -146,4 +145,3 @@
         box-shadow: 0px 7px 4px #00000080;
     }
 }
-
