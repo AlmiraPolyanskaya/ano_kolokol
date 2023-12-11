@@ -726,9 +726,10 @@
   display: flex;
 }
 .events__foto {
-  width: 100%;
-  margin-left: 5px;
+  width: 481px;
+  height: 290px;
   margin-top: 81px;
+  margin-right: 22.4px;
 }
 .events__foto > img {
   width: 100%;
@@ -757,7 +758,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%;
+  max-width: 468px;
   margin: 0 20.3px 94px 132px;
 }
 .events__content__title__wrapper {

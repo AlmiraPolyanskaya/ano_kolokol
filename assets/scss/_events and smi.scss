@@ -6,9 +6,10 @@
   display: flex;
 
   &__foto {
-    width: 100%;
-    margin-left: 5px;
+    width: 481px;
+    height: 290px;
     margin-top: 81px;
+    margin-right: 22.4px;
 
     & > img {
       width: 100%;
@@ -29,7 +30,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 468px;
     margin: 0 20.3px 94px 132px;
 
     &__title__wrapper {
@@ -115,4 +116,19 @@
 .smi > .pattern__basic {
   @extend %horizontal;
   margin-top: 25px;
+}
+
+@media screen and (min-width: $desktop) and (max-width: $large-desktop) {
+}
+
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+}
+
+@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
 }
