@@ -95,6 +95,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 46vw;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
