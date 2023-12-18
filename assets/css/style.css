@@ -842,7 +842,7 @@
 }
 
 .footer {
-  padding: 0 63px 8px 11px;
+  padding: 0 63px 20px 11px;
   background-color: #000;
   color: #c4c4c4;
 }
@@ -875,7 +875,7 @@
   text-transform: uppercase;
 }
 .footer__title_first {
-  margin-bottom: 18px;
+  margin-bottom: 38px;
 }
 .footer__title_first::before {
   content: "";
@@ -887,7 +887,7 @@
   background-color: #c8aa86;
 }
 .footer__title_second {
-  margin-bottom: 6px;
+  margin-bottom: 26px;
 }
 .footer__title_second::before {
   content: "";
@@ -988,7 +988,7 @@
 }
 
 .footer__copyright {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding-left: 37px;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-size: 12px;

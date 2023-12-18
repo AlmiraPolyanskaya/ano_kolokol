@@ -1,7 +1,7 @@
 @import "variables";
 
 .footer {
-  padding: 0 63px 8px 11px;
+  padding: 0 63px 20px 11px;
   background-color: #000;
   color: $light-gray;
   &__wrapper {
@@ -20,7 +20,7 @@
     line-height: normal;
     text-transform: uppercase;
     &_first {
-      margin-bottom: 18px;
+      margin-bottom: 38px;
       &::before {
         content: "";
         position: absolute;
@@ -32,7 +32,7 @@
       }
     }
     &_second {
-      margin-bottom: 6px;
+      margin-bottom: 26px;
       &::before {
         content: "";
         position: absolute;
@@ -115,7 +115,7 @@
 }
 
 .footer__copyright {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding-left: 37px;
   font-family: $text-font;
   font-size: 12px;
