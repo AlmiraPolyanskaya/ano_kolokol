@@ -3,8 +3,13 @@
 @import "_placeholder _selectors";
 
 .pattern__basic {
-  @extend %horizontal;
+  display: flex;
+  justify-content: center;
   margin-top: 0;
+
+  &>img {
+    max-width: 100%;
+  }
 }
 
 .header__wrapper {
@@ -41,6 +46,7 @@
       line-height: 22px;
       text-decoration: none;
       transition: 1ms;
+
       font: {
         size: 20px;
         weight: 600;

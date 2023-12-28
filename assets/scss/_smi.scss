@@ -2,61 +2,6 @@
 @import "_mixins";
 @import "_placeholder _selectors";
 
-.events {
-  display: flex;
-
-  &__foto {
-    margin-top: 81px;
-    margin-right: 22.4px;
-
-    & > img {
-      width: 100%;
-    }
-  }
-
-  &__pattern {
-    height: 100%;
-  }
-
-  &__wrapper {
-    @include flex-center;
-    align-items: flex-start;
-    max-width: calc(100% - 152px);
-    background-color: $bgc_light-beige;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 468px;
-    margin: 0 20.3px 94px 133px;
-
-    &__title__wrapper {
-      margin-left: 8px;
-      margin-top: 36px;
-    }
-
-    &__title {
-      @extend %title;
-    }
-
-    &__text-wrapper {
-      min-width: 467px;
-      margin-top: 10%;
-      border-radius: 30px;
-      background-color: rgba(255, 255, 255, 0.6);
-      box-shadow: 0px 4px 4px 0px $shadow;
-    }
-
-    &__text {
-      @include form-margin-0;
-      font-size: 20px;
-      line-height: 200%;
-      margin: 22px 19px 21px 22px;
-    }
-  }
-}
-
 .smi {
   margin: 38px 0 20px 0;
 
@@ -71,7 +16,8 @@
   &__foto {
     margin: 24px 0 24px 8%;
     min-width: 300px;
-    & > img {
+
+    &>img {
       width: 100%;
     }
   }
@@ -100,7 +46,7 @@
       margin-left: -2px;
       max-width: 508px;
 
-      & > a {
+      &>a {
         text-decoration: none;
         line-height: 100%;
         color: black;
@@ -114,17 +60,21 @@
   }
 }
 
-.smi > .pattern__basic {
-  @extend %horizontal;
+.smi>.pattern__basic {
+  display: flex;
+  justify-content: center;
   margin-top: 25px;
+
+  &>img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 @media screen and (min-width: $desktop) {
   .smi__wrapper {
     padding-bottom: 2vw;
-  }
-  .smi > .pattern__basic {
-    margin-top: 2vw;
   }
 
   .smi__content__link {
@@ -141,27 +91,38 @@
     height: 25vw;
   }
 
-  .smi__foto > img {
+  .smi__foto>img {
     height: 100%;
   }
 
   .smi__content {
     margin-left: 7vw;
   }
+
   .smi__content__links br {
     display: none;
   }
+
+  .smi>.pattern__basic {
+    margin-top: 2vw;
+    width: 100vw;
+  }
+
+  .smi>.pattern__basic>img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
-@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
-}
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {}
 
 @media screen and (min-width: $tablet) and (max-width: $big-tablet) {
   .smi__wrapper {
     max-width: 95vw;
   }
 
-  .smi__content__link > a {
+  .smi__content__link>a {
     font-size: 2.2vw;
   }
 }
@@ -187,7 +148,7 @@
     margin: 0 auto;
   }
 
-  .smi__foto > img {
+  .smi__foto>img {
     margin-top: 10px;
     width: 100%;
   }
@@ -208,7 +169,7 @@
     margin-bottom: 5px;
   }
 
-  .smi__content__link > a {
+  .smi__content__link>a {
     font-size: 2.3vw;
   }
 
@@ -216,13 +177,20 @@
     display: none;
   }
 
-  .smi > .pattern__basic {
+  .smi>.pattern__basic {
     margin-top: 2vw;
+    width: 100vw;
   }
 }
 
+.pattern__basic>img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (max-width: $mobile) {
-  .smi__content__link > a {
+  .smi__content__link>a {
     font-size: 3vw;
   }
 
