@@ -77,41 +77,41 @@
     padding-bottom: 2vw;
   }
 
-  .smi__content__link {
-    max-width: 50vw;
-  }
+  .smi__content {
+    margin-left: 7vw;
 
-  .smi__content__title__wrapper {
-    margin-top: 3vw;
-    margin-bottom: 4vw;
+    &__link {
+      max-width: 50vw;
+    }
+
+    &__links br {
+      display: none;
+    }
+
+    &__title__wrapper {
+      margin-top: 3vw;
+      margin-bottom: 4vw;
+    }
   }
 
   .smi__foto {
     margin-top: 3vw;
     height: 25vw;
-  }
 
-  .smi__foto>img {
-    height: 100%;
-  }
-
-  .smi__content {
-    margin-left: 7vw;
-  }
-
-  .smi__content__links br {
-    display: none;
+    &>img {
+      height: 100%;
+    }
   }
 
   .smi>.pattern__basic {
     margin-top: 2vw;
     width: 100vw;
-  }
 
-  .smi>.pattern__basic>img {
-    width: 100%;
-    height: auto;
-    display: block;
+    &>img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 }
 
@@ -130,63 +130,60 @@
 @media screen and (max-width: $tablet) {
   .smi {
     margin-bottom: 2vw;
-  }
 
-  .smi__wrapper {
-    max-width: 90vw;
-    flex-direction: column-reverse;
-    margin: 0 auto;
-  }
+    &__wrapper {
+      max-width: 90vw;
+      flex-direction: column-reverse;
+      margin: 0 auto;
+    }
 
-  .smi__content__title__wrapper {
-    align-self: center;
-  }
+    &__content {
+      margin: 0 auto;
 
-  .smi__foto {
-    width: 40vw;
-    min-width: 100px;
-    margin: 0 auto;
-  }
+      &__title {
+        font-size: 5vw;
 
-  .smi__foto>img {
-    margin-top: 10px;
-    width: 100%;
-  }
+        &__wrapper {
+          align-self: center;
+          margin: 20px 0 20px 0;
+        }
+      }
 
-  .smi__content {
-    margin: 0 auto;
-  }
+      &__link {
+        margin-bottom: 5px;
 
-  .smi__content__title__wrapper {
-    margin: 20px 0 20px 0;
-  }
+        &>a {
+          font-size: 2.3vw;
+        }
+      }
 
-  .smi__content__title {
-    font-size: 5vw;
-  }
+      &__links br {
+        display: none;
+      }
+    }
 
-  .smi__content__link {
-    margin-bottom: 5px;
-  }
+    &__foto {
+      width: 40vw;
+      min-width: 100px;
+      margin: 0 auto;
 
-  .smi__content__link>a {
-    font-size: 2.3vw;
-  }
-
-  .smi__content__links br {
-    display: none;
+      &>img {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
   }
 
   .smi>.pattern__basic {
     margin-top: 2vw;
     width: 100vw;
   }
-}
 
-.pattern__basic>img {
-  width: 100%;
-  height: auto;
-  display: block;
+  .pattern__basic>img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 @media screen and (max-width: $mobile) {

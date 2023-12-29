@@ -4,10 +4,12 @@
 
 .events {
   display: flex;
+  max-height: 458px;
 
   &__foto {
-    margin-top: 81px;
+    margin-top: 7.3vw;
     margin-right: 22.4px;
+
 
     &>img {
       width: 100%;
@@ -16,20 +18,22 @@
 
   &__pattern {
     height: 100%;
+    width: auto;
+    display: block;
   }
 
   &__wrapper {
     @include flex-center;
     align-items: flex-start;
-    max-width: calc(100% - 152px);
+    width: calc(100% - 152px);
     background-color: $bgc_light-beige;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 468px;
-    margin: 0 20.3px 94px 133px;
+    max-width: 40%;
+    margin: 0 4% 80px 10%;
 
     &__title__wrapper {
       margin-left: 8px;
@@ -37,7 +41,13 @@
     }
 
     &__title {
-      @extend %title;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      font-family: $heading1-font;
+      color: $brown;
+      font-size: 4.4vw;
+      text-shadow: 1px 1px 1px $dark-stroke_color;
+      line-height: 115.2%;
     }
 
     &__text-wrapper {
@@ -57,12 +67,134 @@
   }
 }
 
-@media screen and (min-width: $desktop) {}
+@media screen and (min-width: $large-desktop) {}
+.events__content__text-wrapper {
+  margin-top: 5%;
+}
 
-@media screen and (min-width: $big-tablet) and (max-width: $desktop) {}
+@media screen and (min-width: $desktop) and (max-width: $large-desktop) {}
 
-@media screen and (min-width: $tablet) and (max-width: $big-tablet) {}
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+  .events {
+    max-height: none;
 
-@media screen and (max-width: $tablet) {}
+    &__wrapper {
+      justify-content: space-between;
+    }
 
-@media screen and (max-width: $mobile) {}
+    &__content {
+      max-width: 20%;
+      margin-left: 5%;
+
+      &__text {
+        font-size: 1.5vw;
+
+        &-wrapper {
+          min-width: 440px;
+          margin-top: 6vw;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    &__foto {
+      max-width: 42%;
+      margin-top: 11vw;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1059px) {
+  .events {
+    max-height: 362px;
+
+    &__pattern {
+      width: 60px;
+      display: block;
+    }
+
+    &__wrapper {
+      justify-content: space-between;
+      width: calc(100% - 120px);
+    }
+
+    &__content {
+      max-width: 20%;
+      margin-left: 5%;
+
+      &__text {
+        font-size: 1.8vw;
+        margin: 12px 9px 11px 12px;
+
+        &-wrapper {
+          min-width: 330px;
+          margin-top: 3vw;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &__foto {
+      max-width: 40%;
+      margin-top: 12vw;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .events {
+    justify-content: center;
+
+    &__pattern {
+      display: none;
+    }
+
+    &__wrapper {
+      padding-bottom: 10px;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% - 10px);
+    }
+
+    &__content {
+      max-width: 65%;
+      margin: 0;
+
+      &__title {
+        text-align: center;
+        font-size: 5vw;
+
+        &__wrapper {
+          margin-top: 3vw;
+        }
+      }
+
+      &__text {
+        font-size: 2.3vw;
+        margin: 12px 9px 11px 12px;
+
+        &-wrapper {
+          min-width: 60%;
+          margin-top: 3vw;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &__foto {
+      max-width: 55%;
+      margin-top: 6vw;
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .events__foto {
+    max-width: 70%;
+  }
+  
+  .events__content__text {
+  font-size: 3vw;
+  }
+}
