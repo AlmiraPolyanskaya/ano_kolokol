@@ -73,3 +73,16 @@
     }
   }
 }
+
+.pattern__basic2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+  & > img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+}
+
