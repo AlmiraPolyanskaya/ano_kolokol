@@ -904,6 +904,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (min-width: 375px) and (max-width: 550px) {
   .description {
+    margin: 20px 0 0 0;
     position: relative;
   }
   .description__title_big {
@@ -1014,13 +1015,14 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: 375px) {
   .description {
+    margin: 20px 0 0 0;
     position: relative;
   }
   .description__title_big {
-    font-size: 18vw;
+    font-size: 13vw;
   }
   .description__title_middle {
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 7% 0;
   }
   .description__first-container {
@@ -1131,20 +1133,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 .action__wrapper__title {
   color: #603c22;
   font-family: "Pochaevsk", Helvetica, sans-serif;
   text-align: center;
   line-height: normal;
 }
-
-.action__title {
-  font-size: 6.2vw;
-  margin: 15px 0;
-}
-
 .action__wrapper__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1162,14 +1160,12 @@
   letter-spacing: -0.5px;
   background-color: rgb(250, 250, 250);
 }
-
 .action__wrapper__pattern1 {
   width: 10%;
 }
 .action__wrapper__pattern1 img {
   height: 100%;
 }
-
 .action__wrapper__pattern2 {
   width: 10%;
 }
@@ -1177,16 +1173,15 @@
   height: 100%;
 }
 
+.action__title {
+  font-size: 6.2vw;
+  margin: 15px 0;
+}
+
 /****************************************** Медиа для 1560px+ ************************************************/
 @media screen and (min-width: 1560px) {
   .action__wrapper {
     padding: 2%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .action__title {
-    margin: 3% 0;
   }
   .action__wrapper__content {
     width: 60%;
@@ -1211,6 +1206,9 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .action__title {
+    margin: 3% 0;
+  }
 }
 /****************************************** Медиа для 1280-1560px ************************************************/
 @media screen and (min-width: 1280px) and (max-width: 1560px) {
@@ -1221,11 +1219,6 @@
 }
 /****************************************** Медиа для 1060-1280px ************************************************/
 @media screen and (min-width: 1060px) and (max-width: 1280px) {
-  .action__wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .action__title {
     font-size: 7.3vw;
   }
@@ -1252,6 +1245,130 @@
   }
 }
 /****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .action__title {
+    font-size: 8vw;
+  }
+  .action__wrapper__content {
+    font-size: 2.7vw;
+    line-height: 4vw;
+    letter-spacing: 0px;
+  }
+  .action__wrapper__pattern1 {
+    width: 7%;
+  }
+  .action__wrapper__pattern1 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__wrapper__pattern2 {
+    width: 7%;
+  }
+  .action__wrapper__pattern2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (min-width: 551px) and (max-width: 768px) {
+  .action__wrapper {
+    padding: 15px;
+  }
+  .action__wrapper__content {
+    font-size: 3vw;
+    line-height: 4vw;
+    letter-spacing: 0px;
+    padding: 0 20px;
+    margin: 0 15px;
+  }
+  .action__wrapper__pattern1 {
+    width: 7%;
+  }
+  .action__wrapper__pattern1 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__wrapper__pattern2 {
+    width: 7%;
+  }
+  .action__wrapper__pattern2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__title {
+    font-size: 8vw;
+  }
+}
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  .action__wrapper {
+    padding: 0;
+  }
+  .action__wrapper__content {
+    width: 90%;
+    font-size: 4.5vw;
+    line-height: 6vw;
+    letter-spacing: 0px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .action__wrapper__pattern1 {
+    width: 7%;
+  }
+  .action__wrapper__pattern1 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__wrapper__pattern2 {
+    width: 7%;
+  }
+  .action__wrapper__pattern2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__title {
+    font-size: 10vw;
+  }
+}
+/****************************************** Медиа для 100-375px ************************************************/
+@media screen and (min-width: 100px) and (max-width: 375px) {
+  .action__wrapper {
+    padding: 0;
+  }
+  .action__wrapper__content {
+    width: 90%;
+    font-size: 5vw;
+    line-height: 6vw;
+    letter-spacing: 0px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .action__wrapper__pattern1 {
+    width: 5%;
+  }
+  .action__wrapper__pattern1 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__wrapper__pattern2 {
+    width: 5%;
+  }
+  .action__wrapper__pattern2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .action__title {
+    font-size: 10vw;
+  }
+}
 .work {
   margin-bottom: 20px;
   clear: both;

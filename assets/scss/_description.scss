@@ -536,6 +536,8 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (min-width: $mobile) and (max-width: 550px) {
 	.description {
+		margin: 20px 0 0 0;
+
 		&__title_big {
 			font-size: 12vw;
 		}
@@ -652,12 +654,14 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: $mobile) {
 	.description {
+		margin: 20px 0 0 0;
+
 		&__title_big {
-			font-size: 18vw;
+			font-size: 13vw;
 		}
 
 		&__title_middle {
-			font-size: 8vw;
+			font-size: 7vw;
 			margin: 7% 0;
 		}
 
