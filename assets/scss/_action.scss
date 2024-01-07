@@ -1,0 +1,263 @@
+@import "_variables";
+
+.action__wrapper {
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+	&__title {
+		color: $brown;
+		font-family: $heading1-font;
+		text-align: center;
+		line-height: normal;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+
+		padding: 0 20px;
+		margin: 0 28px;
+
+		text-align: justify;
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: -0.5px;
+		background-color: $bgc_light-gray;
+	}
+
+	&__pattern1 {
+		width: 10%;
+		img {
+			height: 100%;
+		}
+	}
+
+	&__pattern2 {
+		width: 10%;
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.action__title {
+	font-size: 6.2vw;
+	margin: 15px 0;
+}
+
+/****************************************** Медиа для 1560px+ ************************************************/
+@media screen and (min-width: $large-desktop) {
+	.action__wrapper {
+		padding: 2%;
+
+		&__content {
+			width: 60%;
+
+			padding: 0 1.5%;
+			margin: 0 2%;
+
+			font-size: 1.8vw;
+			line-height: 2.6vw;
+		}
+
+		&__pattern1 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.action__title {
+		margin: 3% 0;
+	}
+}
+
+/****************************************** Медиа для 1280-1560px ************************************************/
+@media screen and (min-width: $desktop) and (max-width: $large-desktop) {
+	.action__wrapper__content {
+		font-size: 1.8vw;
+		line-height: 2.6vw;
+	}
+}
+
+/****************************************** Медиа для 1060-1280px ************************************************/
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+	.action__title {
+		font-size: 7.3vw;
+	}
+
+	.action__wrapper {
+		&__content {
+			font-size: 2vw;
+			line-height: 3vw;
+			letter-spacing: 0px;
+		}
+
+		&__pattern1 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+	.action__title {
+		font-size: 8vw;
+	}
+
+	.action__wrapper {
+		&__content {
+			font-size: 2.7vw;
+			line-height: 4vw;
+			letter-spacing: 0px;
+		}
+
+		&__pattern1 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (min-width: 551px) and (max-width: $tablet) {
+	.action__wrapper {
+		padding: 15px;
+
+		&__content {
+			font-size: 3vw;
+			line-height: 4vw;
+			letter-spacing: 0px;
+			padding: 0 20px;
+			margin: 0 15px;
+		}
+
+		&__pattern1 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.action__title {
+		font-size: 8vw;
+	}
+}
+
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (min-width: $mobile) and (max-width: 550px) {
+	.action__wrapper {
+		padding: 0;
+
+		&__content {
+			width: 90%;
+			font-size: 4.5vw;
+			line-height: 6vw;
+			letter-spacing: 0px;
+			padding: 0 20px;
+			margin: 0;
+		}
+
+		&__pattern1 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 7%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.action__title {
+		font-size: 10vw;
+	}
+}
+
+/****************************************** Медиа для 100-375px ************************************************/
+@media screen and (min-width: 100px) and (max-width: $mobile) {
+	.action__wrapper {
+		padding: 0;
+
+		&__content {
+			width: 90%;
+			font-size: 5vw;
+			line-height: 6vw;
+			letter-spacing: 0px;
+			padding: 0 20px;
+			margin: 0;
+		}
+
+		&__pattern1 {
+			width: 5%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__pattern2 {
+			width: 5%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.action__title {
+		font-size: 10vw;
+	}
+}
