@@ -60,7 +60,6 @@
 }
 
 .header__wrapper {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,6 +1113,9 @@
   .description__social-media .description__titles_small {
     margin: 30px 0 30px 0;
   }
+  .description__social-media ul {
+    padding: 0;
+  }
   .description__icons-list {
     width: 80%;
     -ms-flex-pack: distribute;
@@ -1162,15 +1164,16 @@
 }
 .action__wrapper__pattern1 {
   width: 10%;
-}
-.action__wrapper__pattern1 img {
-  height: 100%;
+  background-image: url("../images/work/pattern3.png");
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 .action__wrapper__pattern2 {
   width: 10%;
-}
-.action__wrapper__pattern2 img {
-  height: 100%;
+  background-image: url("../images/work/pattern4.png");
+  background-repeat: repeat-y;
+  background-position: right top;
+  background-size: contain;
 }
 
 .action__title {
@@ -1190,21 +1193,8 @@
     font-size: 1.8vw;
     line-height: 2.6vw;
   }
-  .action__wrapper__pattern1 {
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
     width: 7%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 7%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .action__title {
     margin: 3% 0;
@@ -1227,21 +1217,8 @@
     line-height: 3vw;
     letter-spacing: 0px;
   }
-  .action__wrapper__pattern1 {
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
     width: 7%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 7%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 /****************************************** Медиа для 768-1060px ************************************************/
@@ -1254,27 +1231,14 @@
     line-height: 4vw;
     letter-spacing: 0px;
   }
-  .action__wrapper__pattern1 {
-    width: 7%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 7%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
+    width: 8%;
   }
 }
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (min-width: 551px) and (max-width: 768px) {
   .action__wrapper {
-    padding: 15px;
+    padding: 5px;
   }
   .action__wrapper__content {
     font-size: 3vw;
@@ -1283,21 +1247,8 @@
     padding: 0 20px;
     margin: 0 15px;
   }
-  .action__wrapper__pattern1 {
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
     width: 7%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 7%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .action__title {
     font-size: 8vw;
@@ -1316,21 +1267,8 @@
     padding: 0 20px;
     margin: 0;
   }
-  .action__wrapper__pattern1 {
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
     width: 7%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 7%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .action__title {
     font-size: 10vw;
@@ -1349,21 +1287,8 @@
     padding: 0 20px;
     margin: 0;
   }
-  .action__wrapper__pattern1 {
+  .action__wrapper__pattern1, .action__wrapper__pattern2 {
     width: 5%;
-  }
-  .action__wrapper__pattern1 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .action__wrapper__pattern2 {
-    width: 5%;
-  }
-  .action__wrapper__pattern2 img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .action__title {
     font-size: 10vw;
@@ -1371,7 +1296,6 @@
 }
 .work {
   margin-bottom: 20px;
-  clear: both;
 }
 
 .work__wrapper {
@@ -1544,7 +1468,14 @@
   max-height: 475.636px;
 }
 
-.work__image1, .work__image2, .work__image3, .work__image4, .work__image5, .work__image6, .work__image7, .work__image8 {
+.work__image1,
+.work__image2,
+.work__image3,
+.work__image4,
+.work__image5,
+.work__image6,
+.work__image7,
+.work__image8 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1555,6 +1486,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-self: center;
   padding: 20px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -1566,7 +1498,14 @@
           box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.work__image1, .work__image2, .work__image3, .work__image4, .work__image5, .work__image6, .work__image7, .work__image8 :hover {
+.work__image1,
+.work__image2,
+.work__image3,
+.work__image4,
+.work__image5,
+.work__image6,
+.work__image7,
+.work__image8 :hover {
   -webkit-box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.03);
           box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.03);
   border: none;
@@ -1915,7 +1854,6 @@
   }
   .smi > .pattern__basic {
     margin-top: 2vw;
-    width: 100vw;
   }
   .smi > .pattern__basic > img {
     width: 100%;
