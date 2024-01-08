@@ -6,7 +6,7 @@
 
 	&__wrapper {
 		background-color: $bgc_light-beige;
-		@include description-boxes-align;
+		@include flex-column-align-center;
 	}
 
 	&__title_big {
@@ -52,7 +52,7 @@
 	}
 
 	&__second-container {
-		@include description-boxes-align;
+		@include flex-column-align-center;
 		width: 70%;
 		padding-block: 50px;
 
@@ -111,11 +111,11 @@
 }
 
 .description__contacts-list {
-	@include description-boxes-justify;
+	@include flex-column-justify-center;
 }
 
 .description__requisites-list {
-	@include description-boxes-justify;
+	@include flex-column-justify-center;
 	height: 70%;
 }
 
@@ -125,7 +125,7 @@
 	border-radius: 40px;
 	box-shadow: 0px 4px 5px $shadow;
 	margin-top: 50px;
-	@include description-boxes-align;
+	@include flex-column-align-center;
 
 	&-text {
 		margin: 0 0 15px 0;
