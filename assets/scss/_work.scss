@@ -17,7 +17,6 @@
 	}
 
 	&__titles-big {
-		margin-block: 45px;
 		width: 75%;
 	}
 
@@ -94,36 +93,357 @@
 	&__image8 {
 		grid-column: 4/5;
 	}
+
+	&__image1,
+	&__image2,
+	&__image3,
+	&__image4,
+	&__image5,
+	&__image6,
+	&__image7,
+	&__image8 {
+		@include flex-column-align-center;
+
+		padding: 25px;
+		margin: 0 10px;
+		width: 90%;
+
+		background-color: rgba(200, 170, 134, 0.2);
+		box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+	}
+
+	&__picture {
+		padding-bottom: 20px;
+		width: 100%;
+	}
+
+	&__subtext {
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-family: $text-font;
+		font-size: 1.2vw;
+		font-weight: 700;
+		line-height: 170%;
+		align-self: flex-start;
+	}
 }
 
-.work__image1,
-.work__image2,
-.work__image3,
-.work__image4,
-.work__image5,
-.work__image6,
-.work__image7,
-.work__image8 {
-	@include flex-column-align-center;
+/****************************************** Медиа для 1560px+ ************************************************/
+@media screen and (min-width: $large-desktop) {
+	.work {
+		margin-bottom: 5%;
 
-	padding: 25px;
-	margin: 0 10px;
-	width: 90%;
+		&__title-1-wrapper,
+		&__title-2-wrapper {
+			margin-block: 4%;
+		}
 
-	background-color: rgba(200, 170, 134, 0.2);
-	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+		&__title-1,
+		&__title-2 {
+			font-size: 3.8vw;
+			padding-left: 1.5%;
+		}
+
+		&__subtitle-1,
+		&__subtitle-2 {
+			font-size: 1.8vw;
+			padding-right: 1.5%;
+		}
+
+		&__images-grid-1,
+		&__images-grid-2 {
+			width: 78%;
+		}
+
+		&__image1,
+		&__image2,
+		&__image3,
+		&__image4,
+		&__image5,
+		&__image6,
+		&__image7,
+		&__image8 {
+			padding: 7%;
+			margin: 0 10px;
+		}
+
+		&__picture {
+			padding-bottom: 7%;
+		}
+
+		&__subtext {
+			font-size: 1vw;
+			line-height: 180%;
+		}
+	}
 }
 
-.work__picture {
-	padding-bottom: 20px;
-	width: 100%;
+/****************************************** Медиа для 1280-1560px ************************************************/
+@media screen and (min-width: $desktop) and (max-width: $large-desktop) {
+	.work {
+		&__title-1,
+		&__title-2 {
+			font-size: 3.8vw;
+		}
+
+		&__subtitle-1,
+		&__subtitle-2 {
+			font-size: 1.8vw;
+		}
+	}
 }
 
-.work__subtext {
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	font-family: $text-font;
-	font-size: 1.2vw;
-	font-weight: 700;
-	line-height: 170%;
-	align-self: flex-start;
+/****************************************** Медиа для 1060-1280px ************************************************/
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+	.work {
+		&__wrapper {
+			padding: 25px;
+		}
+
+		&__title-1-wrapper,
+		&__title-2-wrapper {
+			margin-block: 5%;
+		}
+
+		&__title-1,
+		&__title-2 {
+			font-size: 4vw;
+		}
+
+		&__subtitle-1,
+		&__subtitle-2 {
+			font-size: 2vw;
+			line-height: 140%;
+		}
+
+		&__titles-big {
+			width: 80%;
+		}
+
+		&__subtext {
+			font-size: 1.1vw;
+			line-height: 180%;
+		}
+	}
+}
+
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+	.work {
+		margin-bottom: 7%;
+
+		&__wrapper {
+			padding: 20px 10%;
+		}
+
+		&__title-1-wrapper,
+		&__title-2-wrapper {
+			margin-block: 7%;
+		}
+
+		&__title-1,
+		&__title-2 {
+			font-size: 4.2vw;
+			padding-left: 3%;
+		}
+
+		&__titles-big {
+			width: 100%;
+		}
+
+		&__subtitle-1,
+		&__subtitle-2 {
+			font-size: 2.3vw;
+			line-height: 140%;
+			p {
+				width: 90%;
+			}
+			padding-right: 3%;
+		}
+
+		&__image1,
+		&__image2,
+		&__image3,
+		&__image4,
+		&__image5,
+		&__image6,
+		&__image7,
+		&__image8 {
+			padding: 7%;
+			width: 80%;
+		}
+
+		&__picture {
+			padding-bottom: 7%;
+			object-fit: cover;
+		}
+
+		&__subtext {
+			font-size: 1.8vw;
+		}
+
+		&__images-grid-1,
+		&__images-grid-2 {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			row-gap: 5%;
+			margin-bottom: 5%;
+		}
+
+		&__image1 {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		&__image2 {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__image3 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__image4 {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+
+		&__image5 {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		&__image6 {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__image7 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__image8 {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+	}
+}
+
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (min-width: 551px) and (max-width: $tablet) {
+	.work {
+		margin-bottom: 7%;
+
+		&__wrapper {
+			padding: 20px 5%;
+		}
+
+		&__title-1-wrapper,
+		&__title-2-wrapper {
+			margin-block: 5%;
+		}
+
+		&__title-1,
+		&__title-2 {
+			font-size: 4.8vw;
+			padding-left: 2%;
+		}
+
+		&__titles-big {
+			width: 100%;
+		}
+
+		&__subtitle-1,
+		&__subtitle-2 {
+			font-size: 2.8vw;
+			line-height: 140%;
+			p {
+				width: 100%;
+			}
+			padding-right: 2%;
+		}
+
+		&__image1,
+		&__image2,
+		&__image3,
+		&__image4,
+		&__image5,
+		&__image6,
+		&__image7,
+		&__image8 {
+			padding: 7%;
+			width: 80%;
+		}
+
+		&__picture {
+			padding-bottom: 7%;
+			object-fit: cover;
+		}
+
+		&__subtext {
+			font-size: 2vw;
+		}
+
+		&__images-grid-1,
+		&__images-grid-2 {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			row-gap: 5%;
+			margin-bottom: 5%;
+		}
+
+		&__image1 {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		&__image2 {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__image3 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__image4 {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+
+		&__image5 {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		&__image6 {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__image7 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__image8 {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+	}
+}
+
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (min-width: $mobile) and (max-width: 550px) {
+}
+
+/****************************************** Медиа для 100-375px ************************************************/
+@media screen and (min-width: 100px) and (max-width: $mobile) {
 }
