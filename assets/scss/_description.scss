@@ -112,6 +112,9 @@
 
 .description__contacts-list {
 	@include flex-column-justify-center;
+	.description__bold-font {
+		font-weight: bold;
+	}
 }
 
 .description__requisites-list {
