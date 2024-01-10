@@ -1499,7 +1499,7 @@
 /****************************************** Медиа для 768-1060px ************************************************/
 @media screen and (min-width: 768px) and (max-width: 1060px) {
   .work {
-    margin-bottom: 7%;
+    margin-bottom: 4%;
   }
   .work__wrapper {
     padding: 20px 10%;
@@ -2004,23 +2004,14 @@
   line-height: 115.2%;
 }
 
-.events {
+.events__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 458px;
-}
-.events__foto {
-  margin-top: 7.3vw;
-  margin-right: 22.4px;
-}
-.events__foto > img {
-  width: 100%;
-}
-.events__pattern {
-  height: 100%;
-  width: auto;
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 20px;
 }
 .events__wrapper {
   display: -webkit-box;
@@ -2029,11 +2020,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: calc(100% - 152px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 86%;
   background-color: rgba(200, 170, 134, 0.2);
+}
+.events__pattern1, .events__pattern2 {
+  width: 7%;
+  background-image: url("../images/events_and_smi/rectangle.png");
+  background-repeat: repeat-y;
+  background-size: 90%;
+  background-position: center top;
+}
+.events__pattern1 {
+  margin-right: 10px;
+}
+.events__pattern2 {
+  margin-left: 10px;
 }
 .events__content {
   display: -webkit-box;
@@ -2043,12 +2047,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 40%;
-  margin: 0 4% 80px 10%;
-}
-.events__content__title__wrapper {
-  margin-left: 8px;
-  margin-top: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding: 7% 2% 7% 5%;
 }
 .events__content__title {
   -webkit-margin-before: 0;
@@ -2062,9 +2068,8 @@
   line-height: 115.2%;
 }
 .events__content__text-wrapper {
-  min-width: 467px;
   margin-top: 10%;
-  border-radius: 30px;
+  border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -2076,110 +2081,77 @@
           margin-block-end: 0;
   font-size: 20px;
   line-height: 200%;
-  margin: 22px 19px 21px 22px;
+  margin: 20px;
+}
+.events__photo {
+  width: 50%;
+  padding: 0 5% 0 2%;
+}
+.events__photo > img {
+  width: 100%;
+  border-radius: 25px;
 }
 
-@media screen and (min-width: 2000px) {
-  .events {
-    max-height: none;
-    height: 541px;
-  }
-  .events__pattern {
-    width: 90px !important;
-    display: block;
+/****************************************** Медиа для 1560px+ ************************************************/
+@media screen and (min-width: 1560px) {
+  .events__container {
+    padding: 40px 20px;
   }
   .events__wrapper {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: calc(100% - 180px);
+    width: 60%;
+  }
+  .events__pattern1, .events__pattern2 {
+    background-size: 65%;
   }
   .events__content__title {
-    font-size: 4vw;
+    font-size: 3.8vw;
   }
   .events__content__text {
-    font-size: 1vw;
+    font-size: 1.3vw;
+    line-height: 170%;
+    margin: 5%;
   }
-  .events__foto {
-    margin-left: 10vw;
-    margin-top: 4%;
-    width: 25%;
-  }
-}
-@media screen and (min-width: 1560px) {
   .events__content__text-wrapper {
-    margin-top: 4%;
+    margin-top: 15%;
   }
 }
+/****************************************** Медиа для 1060-1280px ************************************************/
 @media screen and (min-width: 1060px) and (max-width: 1280px) {
-  .events {
-    max-height: none;
-  }
-  .events__wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .events__content {
-    max-width: 20%;
-    margin-left: 5%;
+  .events__content__title {
+    font-size: 4.4vw;
   }
   .events__content__text {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
+    line-height: 160%;
   }
   .events__content__text-wrapper {
-    min-width: 440px;
-    margin-top: 6vw;
+    margin-top: 17%;
     border-radius: 15px;
   }
-  .events__foto {
-    max-width: 42%;
-    margin-top: 11vw;
-  }
 }
-@media screen and (min-width: 768px) and (max-width: 1059px) {
-  .events {
-    max-height: 362px;
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .events__pattern1, .events__pattern2 {
+    background-size: 80%;
   }
-  .events__pattern {
-    width: 60px;
-    display: block;
-  }
-  .events__wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: calc(100% - 120px);
-  }
-  .events__content {
-    max-width: 20%;
-    margin-left: 5%;
+  .events__content__title {
+    font-size: 4.8vw;
   }
   .events__content__text {
     font-size: 1.8vw;
-    margin: 12px 9px 11px 12px;
+    line-height: 170%;
   }
   .events__content__text-wrapper {
-    min-width: 330px;
-    margin-top: 3vw;
+    margin-top: 15%;
     border-radius: 10px;
   }
-  .events__foto {
-    max-width: 40%;
-    margin-top: 12vw;
-  }
 }
-@media screen and (max-width: 767px) {
-  .events {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .events__pattern {
-    display: none;
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (min-width: 551px) and (max-width: 768px) {
+  .events__container {
+    padding: 5px;
   }
   .events__wrapper {
-    padding-bottom: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2187,40 +2159,119 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100% - 10px);
   }
   .events__content {
-    max-width: 65%;
-    margin: 0;
+    width: 80%;
+    padding: 5% 0 7% 0;
   }
   .events__content__title {
     text-align: center;
-    font-size: 5vw;
-  }
-  .events__content__title__wrapper {
-    margin-top: 3vw;
+    font-size: 7vw;
   }
   .events__content__text {
-    font-size: 2.3vw;
-    margin: 12px 9px 11px 12px;
+    font-size: 2.5vw;
+    text-align: center;
+    line-height: 170%;
+    margin: 3%;
   }
   .events__content__text-wrapper {
-    min-width: 60%;
-    margin-top: 3vw;
+    margin-top: 7%;
     border-radius: 10px;
+    width: 90%;
   }
-  .events__foto {
-    max-width: 55%;
-    margin-top: 6vw;
-    margin-right: 0;
+  .events__photo {
+    width: 70%;
+    padding: 0 0 7% 0;
   }
 }
-@media screen and (max-width: 375px) {
-  .events__foto {
-    max-width: 70%;
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  .events__container {
+    padding: 5px;
+  }
+  .events__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .events__content {
+    width: 100%;
+    padding: 7% 5% 7% 5%;
+  }
+  .events__content__title {
+    text-align: center;
+    font-size: 10vw;
   }
   .events__content__text {
-    font-size: 3vw;
+    font-size: 2.9vw;
+    text-align: center;
+    line-height: 170%;
+    margin: 5%;
+  }
+  .events__content__text-wrapper {
+    margin-top: 7%;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .events__photo {
+    width: 100%;
+    padding: 0 7% 7% 7%;
+  }
+}
+/****************************************** Медиа для 100-375px ************************************************/
+@media screen and (min-width: 100px) and (max-width: 375px) {
+  .events__container {
+    padding: 0;
+  }
+  .events__pattern1, .events__pattern2 {
+    width: 5%;
+    background-image: url("../images/events_and_smi/rectangle.png");
+    background-repeat: repeat-y;
+    background-size: 90%;
+    background-position: center top;
+  }
+  .events__pattern1 {
+    margin-right: 0;
+  }
+  .events__pattern2 {
+    margin-left: 0;
+  }
+  .events__wrapper {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .events__content {
+    width: 100%;
+    padding: 7% 2%;
+  }
+  .events__content__title {
+    text-align: center;
+    font-size: 11vw;
+  }
+  .events__content__text {
+    font-size: 4.5vw;
+    text-align: center;
+    line-height: 170%;
+    margin: 5%;
+  }
+  .events__content__text-wrapper {
+    margin-top: 5%;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .events__photo {
+    width: 100%;
+    padding: 0 7% 7% 7%;
   }
 }
 .smi__content__title {

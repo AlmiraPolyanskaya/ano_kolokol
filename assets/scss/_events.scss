@@ -3,230 +3,299 @@
 @import "_placeholder _selectors";
 
 .events {
-  display: flex;
-  max-height: 458px;
+	&__container {
+		display: flex;
+		justify-content: center;
+		padding: 40px 20px;
+	}
 
-  &__foto {
-    margin-top: 7.3vw;
-    margin-right: 22.4px;
+	&__wrapper {
+		@include flex-center;
+		align-items: center;
+		width: 86%;
+		background-color: $bgc_light-beige;
+	}
 
+	&__pattern1,
+	&__pattern2 {
+		width: 7%;
+		background-image: url("../images/events_and_smi/rectangle.png");
+		background-repeat: repeat-y;
+		background-size: 90%;
+		background-position: center top;
+	}
 
-    &>img {
-      width: 100%;
-    }
-  }
+	&__pattern1 {
+		margin-right: 10px;
+	}
 
-  &__pattern {
-    height: 100%;
-    width: auto;
-    display: block;
-  }
+	&__pattern2 {
+		margin-left: 10px;
+	}
 
-  &__wrapper {
-    @include flex-center;
-    align-items: flex-start;
-    width: calc(100% - 152px);
-    background-color: $bgc_light-beige;
-  }
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		padding: 7% 2% 7% 5%;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    margin: 0 4% 80px 10%;
+		&__title {
+			margin-block-start: 0;
+			margin-block-end: 0;
+			font-family: $heading1-font;
+			color: $brown;
+			font-size: 4.4vw;
+			text-shadow: 1px 1px 1px $dark-stroke_color;
+			line-height: 115.2%;
+		}
 
-    &__title__wrapper {
-      margin-left: 8px;
-      margin-top: 36px;
-    }
+		&__text-wrapper {
+			margin-top: 10%;
+			border-radius: 25px;
+			background-color: rgba(255, 255, 255, 0.6);
+			box-shadow: 0px 4px 4px 0px $shadow;
+		}
 
-    &__title {
-      margin-block-start: 0;
-      margin-block-end: 0;
-      font-family: $heading1-font;
-      color: $brown;
-      font-size: 4.4vw;
-      text-shadow: 1px 1px 1px $dark-stroke_color;
-      line-height: 115.2%;
-    }
+		&__text {
+			@include form-margin-0;
+			font-size: 20px;
+			line-height: 200%;
+			margin: 20px;
+		}
+	}
 
-    &__text-wrapper {
-      min-width: 467px;
-      margin-top: 10%;
-      border-radius: 30px;
-      background-color: rgba(255, 255, 255, 0.6);
-      box-shadow: 0px 4px 4px 0px $shadow;
-    }
+	&__photo {
+		width: 50%;
+		padding: 0 5% 0 2%;
 
-    &__text {
-      @include form-margin-0;
-      font-size: 20px;
-      line-height: 200%;
-      margin: 22px 19px 21px 22px;
-    }
-  }
+		& > img {
+			width: 100%;
+			border-radius: 25px;
+		}
+	}
 }
 
-@media screen and (min-width: 2000px) {
-  .events {
-    max-height: none;
-    height: 541px;
-
-    &__pattern {
-      width: 90px!important;
-      display: block;
-    }
-
-    &__wrapper {
-      justify-content: flex-start;
-      width: calc(100% - 180px);
-    }
-
-    &__content__title {
-      font-size: 4vw;
-    }
-
-    &__content__text {
-      font-size: 1vw;
-    }
-
-    &__foto {
-      margin-left: 10vw;
-      margin-top: 4%;
-      width: 25%;
-    }
-  }
-}
-
+/****************************************** Медиа для 1560px+ ************************************************/
 @media screen and (min-width: $large-desktop) {
-  .events__content__text-wrapper {
-    margin-top: 4%;
-  }
+	.events {
+		&__container {
+			padding: 40px 20px;
+		}
+
+		&__wrapper {
+			width: 60%;
+		}
+
+		&__pattern1,
+		&__pattern2 {
+			background-size: 65%;
+		}
+
+		&__content__title {
+			font-size: 3.8vw;
+		}
+
+		&__content__text {
+			font-size: 1.3vw;
+			line-height: 170%;
+			margin: 5%;
+
+			&-wrapper {
+				margin-top: 15%;
+			}
+		}
+	}
 }
 
-@media screen and (min-width: $desktop) and (max-width: $large-desktop) {}
-
+/****************************************** Медиа для 1060-1280px ************************************************/
 @media screen and (min-width: $big-tablet) and (max-width: $desktop) {
-  .events {
-    max-height: none;
+	.events {
+		&__content {
+			&__title {
+				font-size: 4.4vw;
+			}
 
-    &__wrapper {
-      justify-content: space-between;
-    }
+			&__text {
+				font-size: 1.7vw;
+				line-height: 160%;
 
-    &__content {
-      max-width: 20%;
-      margin-left: 5%;
-
-      &__text {
-        font-size: 1.5vw;
-
-        &-wrapper {
-          min-width: 440px;
-          margin-top: 6vw;
-          border-radius: 15px;
-        }
-      }
-    }
-
-    &__foto {
-      max-width: 42%;
-      margin-top: 11vw;
-    }
-  }
+				&-wrapper {
+					margin-top: 17%;
+					border-radius: 15px;
+				}
+			}
+		}
+	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1059px) {
-  .events {
-    max-height: 362px;
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+	.events {
+		&__pattern1,
+		&__pattern2 {
+			background-size: 80%;
+		}
 
-    &__pattern {
-      width: 60px;
-      display: block;
-    }
+		&__content {
+			&__title {
+				font-size: 4.8vw;
+			}
 
-    &__wrapper {
-      justify-content: space-between;
-      width: calc(100% - 120px);
-    }
+			&__text {
+				font-size: 1.8vw;
+				line-height: 170%;
 
-    &__content {
-      max-width: 20%;
-      margin-left: 5%;
-
-      &__text {
-        font-size: 1.8vw;
-        margin: 12px 9px 11px 12px;
-
-        &-wrapper {
-          min-width: 330px;
-          margin-top: 3vw;
-          border-radius: 10px;
-        }
-      }
-    }
-
-    &__foto {
-      max-width: 40%;
-      margin-top: 12vw;
-    }
-  }
+				&-wrapper {
+					margin-top: 15%;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 767px) {
-  .events {
-    justify-content: center;
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (min-width: 551px) and (max-width: $tablet) {
+	.events {
+		&__container {
+			padding: 5px;
+		}
 
-    &__pattern {
-      display: none;
-    }
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
 
-    &__wrapper {
-      padding-bottom: 10px;
-      flex-direction: column;
-      align-items: center;
-      width: calc(100% - 10px);
-    }
+		&__content {
+			width: 80%;
+			padding: 5% 0 7% 0;
 
-    &__content {
-      max-width: 65%;
-      margin: 0;
+			&__title {
+				text-align: center;
+				font-size: 7vw;
+			}
 
-      &__title {
-        text-align: center;
-        font-size: 5vw;
+			&__text {
+				font-size: 2.5vw;
+				text-align: center;
+				line-height: 170%;
+				margin: 3%;
 
-        &__wrapper {
-          margin-top: 3vw;
-        }
-      }
+				&-wrapper {
+					margin-top: 7%;
+					border-radius: 10px;
+					width: 90%;
+				}
+			}
+		}
 
-      &__text {
-        font-size: 2.3vw;
-        margin: 12px 9px 11px 12px;
-
-        &-wrapper {
-          min-width: 60%;
-          margin-top: 3vw;
-          border-radius: 10px;
-        }
-      }
-    }
-
-    &__foto {
-      max-width: 55%;
-      margin-top: 6vw;
-      margin-right: 0;
-    }
-  }
+		&__photo {
+			width: 70%;
+			padding: 0 0 7% 0;
+		}
+	}
 }
 
-@media screen and (max-width: $mobile) {
-  .events__foto {
-    max-width: 70%;
-  }
-  
-  .events__content__text {
-  font-size: 3vw;
-  }
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (min-width: $mobile) and (max-width: 550px) {
+	.events {
+		&__container {
+			padding: 5px;
+		}
+
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__content {
+			width: 100%;
+			padding: 7% 5% 7% 5%;
+
+			&__title {
+				text-align: center;
+				font-size: 10vw;
+			}
+
+			&__text {
+				font-size: 2.9vw;
+				text-align: center;
+				line-height: 170%;
+				margin: 5%;
+
+				&-wrapper {
+					margin-top: 7%;
+					border-radius: 10px;
+					width: 90%;
+				}
+			}
+		}
+
+		&__photo {
+			width: 100%;
+			padding: 0 7% 7% 7%;
+		}
+	}
+}
+
+/****************************************** Медиа для 100-375px ************************************************/
+@media screen and (min-width: 100px) and (max-width: $mobile) {
+	.events {
+		&__container {
+			padding: 0;
+		}
+
+		&__pattern1,
+		&__pattern2 {
+			width: 5%;
+			background-image: url("../images/events_and_smi/rectangle.png");
+			background-repeat: repeat-y;
+			background-size: 90%;
+			background-position: center top;
+		}
+
+		&__pattern1 {
+			margin-right: 0;
+		}
+
+		&__pattern2 {
+			margin-left: 0;
+		}
+
+		&__wrapper {
+			width: 90%;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__content {
+			width: 100%;
+			padding: 7% 2%;
+
+			&__title {
+				text-align: center;
+				font-size: 11vw;
+			}
+
+			&__text {
+				font-size: 4.5vw;
+				text-align: center;
+				line-height: 170%;
+				margin: 5%;
+
+				&-wrapper {
+					margin-top: 5%;
+					border-radius: 10px;
+					width: 90%;
+				}
+			}
+		}
+
+		&__photo {
+			width: 100%;
+			padding: 0 7% 7% 7%;
+		}
+	}
 }
