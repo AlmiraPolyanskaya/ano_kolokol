@@ -3001,9 +3001,9 @@
     height: calc(55px + 1.5vw);
   }
   .footer-arrow__link {
-    width: calc(77px + 3vw);
-    height: calc(77px + 3vw);
-    border-radius: calc(40px + 3vw);
+    width: calc(77px + 2vw);
+    height: calc(77px + 2vw);
+    border-radius: calc(40px + 2vw);
   }
   .footer-arrow__link img {
     width: 200px;
