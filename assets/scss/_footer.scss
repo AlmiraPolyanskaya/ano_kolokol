@@ -1,122 +1,472 @@
 @import "variables";
 
 .footer {
-  padding: 0 63px 20px 11px;
-  background-color: #000;
-  color: $light-gray;
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  &__wrap {
-    @include flex-space-between;
-    align-items: start;
-  }
-  &__title {
-    position: relative;
-    margin: 0;
-    font-family: $heading1-font;
-    font-size: 24px;
-    line-height: normal;
-    text-transform: uppercase;
-    &_first {
-      margin-bottom: 38px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        width: 25px;
-        height: 2px;
-        background-color: $beige;
-      }
-    }
-    &_second {
-      margin-bottom: 26px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        width: 35px;
-        height: 2px;
-        background-color: $beige;
-      }
-    }
-  }
+	background-color: #000;
+	color: $light-gray;
+	display: flex;
+	justify-content: center;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 85%;
+		margin: 3% 0;
+	}
+
+	&__wrap {
+		@include flex-space-between;
+		align-items: start;
+	}
+
+	&__additional-wrapper {
+		display: flex;
+		width: 73%;
+		justify-content: space-between;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $heading1-font;
+		font-size: 2.2vw;
+		text-transform: uppercase;
+
+		&_first {
+			margin-bottom: 8%;
+		}
+
+		&_second {
+			margin-bottom: 12%;
+		}
+	}
 }
 
 .footer-logo {
-  max-width: 228px;
+	width: 25%;
+
+	img {
+		width: 100%;
+	}
 }
 
 .footer-nav {
-  padding-top: 32px;
-  &__list {
-    display: flex;
-    gap: 31px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  &__link {
-    text-decoration: none;
-    color: $light-gray;
-    &:hover {
-      color: $beige;
-      text-decoration: underline;
-    }
-  }
+	&__list {
+		display: flex;
+		gap: 30px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $light-gray;
+		font-size: 1.5vw;
+
+		&:hover {
+			color: $beige;
+			text-decoration: underline;
+		}
+	}
 }
 
 .footer-socials {
-  padding-top: 32px;
-  padding-right: 63px;
-  &__list {
-    display: flex;
-    align-items: center;
-    gap: 17px;
-    & a {
-      @include flex-center;
-      align-items: center;
-      width: 47px;
-      height: 51px;
-    }
-    &_tg:hover {
-      background-color: rgba(200, 170, 134, 0.4);
-      border-radius: 12px;
-    }
-    &_vk:hover {
-      background-color: rgba(200, 170, 134, 0.4);
-      border-radius: 12px;
-    }
-  }
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		width: 60%;
+
+		&-item {
+			width: 55px;
+			height: 55px;
+			&:hover {
+				background-color: rgba(200, 170, 134, 0.4);
+				border-radius: 12px;
+			}
+
+			& a {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				& > img {
+					width: 80%;
+				}
+			}
+		}
+	}
 }
 
 .footer-arrow {
-  position: fixed;
-  right: 5%;
-  bottom: 28px;
-  z-index: 99;
-  &__link {
-    @include flex-center;
-    align-items: center;
-    width: 77px;
-    height: 77px;
-    border-radius: 40px;
-    background-color: #c8aa8690;
-    &:hover {
-      background-color: $hover-color;
-    }
-    & img {
-      width: 200px;
-    }
-  }
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	z-index: 99;
+
+	&__link {
+		@include flex-center;
+		align-items: center;
+		width: 77px;
+		height: 77px;
+		border-radius: 40px;
+		background-color: #c8aa8690;
+
+		&:hover {
+			background-color: $hover-color;
+		}
+
+		& img {
+			width: 200px;
+		}
+	}
 }
 
 .footer__copyright {
-  margin: 20px 0 0 0;
-  padding-left: 37px;
-  font-family: $text-font;
-  font-size: 12px;
+	margin: 3% 0 0 0;
+	font-family: $text-font;
+	font-size: 1.2vw;
+}
+
+/****************************************** Медиа для 1560px+ ************************************************/
+@media screen and (min-width: $large-desktop) {
+	.footer {
+		&__wrapper {
+			width: 70%;
+		}
+
+		&__title {
+			font-size: 2vw;
+		}
+
+		&-nav {
+			&__list {
+				gap: 2vw;
+			}
+
+			&__link {
+				font-size: 1.2vw;
+			}
+		}
+
+		&__copyright {
+			font-size: 1vw;
+		}
+
+		&-socials {
+			&__list {
+				gap: 1vw;
+				&-item {
+					width: calc(55px + 1.5vw);
+					height: calc(55px + 1.5vw);
+				}
+			}
+		}
+
+		&-arrow {
+			&__link {
+				width: calc(77px + 2vw);
+				height: calc(77px + 2vw);
+				border-radius: calc(40px + 2vw);
+
+				& img {
+					width: 200px;
+				}
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 1060-1280px ************************************************/
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+	.footer {
+		&__title {
+			font-size: 2.5vw;
+		}
+	}
+}
+
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+	.footer {
+		&__wrapper {
+			width: 90%;
+			margin: 4% 0;
+		}
+
+		&__additional-wrapper {
+			width: 65%;
+		}
+
+		&-logo {
+			width: 23%;
+		}
+
+		&__title {
+			font-size: 3vw;
+			margin-top: 10px;
+
+			&_first {
+				margin-bottom: 10%;
+			}
+
+			&_second {
+				margin-bottom: 10%;
+			}
+		}
+
+		&-nav {
+			&__list {
+				gap: 2vw;
+			}
+
+			&__link {
+				font-size: 1.6vw;
+			}
+		}
+
+		&-socials {
+			margin-right: 3%;
+
+			&__list {
+				gap: 20px;
+				width: 70%;
+
+				&-item {
+					width: calc(45px + 1vw);
+					height: calc(45px + 1vw);
+					&:hover {
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+
+		&-arrow {
+			right: 3%;
+			&__link {
+				width: 50px;
+				height: 50px;
+				border-radius: 40px;
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 551-768px ************************************************/
+@media screen and (max-width: $tablet) {
+	.footer {
+		&__wrapper {
+			width: 80%;
+			margin: 5% 0;
+		}
+
+		&__additional-wrapper {
+			width: 58%;
+		}
+
+		&-logo {
+			width: 30%;
+		}
+
+		&__title {
+			font-size: 3.5vw;
+
+			&_first {
+				margin-bottom: 15%;
+			}
+		}
+
+		&-arrow {
+			&__link {
+				width: 55px;
+				height: 55px;
+				border-radius: 40px;
+			}
+		}
+
+		&-nav {
+			&__list {
+				flex-direction: column;
+				gap: 25px;
+			}
+
+			&__link {
+				font-size: 2.5vw;
+			}
+		}
+
+		&__copyright {
+			margin: 9% 0 0 0;
+			font-size: 1.6vw;
+		}
+
+		&-socials {
+			margin-right: 3%;
+
+			&__list {
+				width: 75%;
+
+				&-item {
+					width: calc(45px + 1vw);
+					height: calc(45px + 1vw);
+					&:hover {
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (max-width: 550px) {
+	.footer {
+		&__wrap {
+			flex-direction: column;
+			justify-content: stretch;
+			align-items: center;
+		}
+
+		&__additional-wrapper {
+			width: 100%;
+		}
+
+		&-logo {
+			width: 45%;
+		}
+
+		&__title {
+			font-size: 7vw;
+			margin-top: 10px;
+			text-align: center;
+
+			&_first {
+				margin-bottom: 20%;
+			}
+
+			&_second {
+				margin-bottom: 10%;
+			}
+		}
+
+		&-nav {
+			margin-right: 5%;
+			margin-top: 1%;
+			&__list {
+				gap: 8vw;
+			}
+
+			&__link {
+				font-size: 3.3vw;
+			}
+		}
+
+		&__copyright {
+			margin: 15% 0 0 0;
+			font-size: 2.5vw;
+			text-align: center;
+		}
+
+		&-socials {
+			margin-right: 0;
+			margin-top: 9%;
+
+			&__wrapper {
+				justify-content: center;
+			}
+
+			&__list {
+				width: 75%;
+				justify-content: space-around;
+
+				&-item {
+					width: calc(65px + 1vw);
+					height: calc(65px + 1vw);
+				}
+			}
+		}
+
+		&-arrow {
+			&__link {
+				width: 65px;
+				height: 65px;
+				border-radius: 40px;
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 0-375px ************************************************/
+@media screen and (max-width: $mobile) {
+	.footer {
+		&__wrapper {
+			margin: 7% 0;
+		}
+
+		&__title {
+			font-size: 9vw;
+			margin-top: 5px;
+		}
+
+		&__additional-wrapper {
+			width: 100%;
+			flex-direction: column;
+			justify-content: stretch;
+			align-items: center;
+		}
+
+		&-logo {
+			width: 70%;
+		}
+
+		&-nav {
+			margin-right: 0;
+			margin-top: 9%;
+			align-items: center;
+			&__list {
+				align-items: center;
+			}
+
+			&__link {
+				font-size: 5vw;
+			}
+		}
+
+		&-socials {
+			margin-top: 15%;
+
+			&__list {
+				width: 80%;
+
+				&-item {
+					width: calc(60px + 1vw);
+					height: calc(60px + 1vw);
+				}
+			}
+		}
+
+		&-arrow {
+			right: 5%;
+			bottom: 2%;
+			&__link {
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+			}
+		}
+
+		&__copyright {
+			font-size: 4vw;
+		}
+	}
 }

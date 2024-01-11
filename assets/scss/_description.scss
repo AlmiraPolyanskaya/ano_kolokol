@@ -6,7 +6,7 @@
 
 	&__wrapper {
 		background-color: $bgc_light-beige;
-		@include description-boxes-align;
+		@include flex-column-align-center;
 	}
 
 	&__title_big {
@@ -52,7 +52,7 @@
 	}
 
 	&__second-container {
-		@include description-boxes-align;
+		@include flex-column-align-center;
 		width: 70%;
 		padding-block: 50px;
 
@@ -111,11 +111,14 @@
 }
 
 .description__contacts-list {
-	@include description-boxes-justify;
+	@include flex-column-justify-center;
+	.description__bold-font {
+		font-weight: bold;
+	}
 }
 
 .description__requisites-list {
-	@include description-boxes-justify;
+	@include flex-column-justify-center;
 	height: 70%;
 }
 
@@ -125,7 +128,7 @@
 	border-radius: 40px;
 	box-shadow: 0px 4px 5px $shadow;
 	margin-top: 50px;
-	@include description-boxes-align;
+	@include flex-column-align-center;
 
 	&-text {
 		margin: 0 0 15px 0;
@@ -292,6 +295,10 @@
 			font-size: 2.3vw;
 			margin: 30px 0;
 		}
+
+		&__second-container {
+			width: 80%;
+		}
 	}
 
 	.mission-list {
@@ -312,14 +319,14 @@
 
 	.second-container__inner-wrapper {
 		li {
-			font-size: 1.3vw;
+			font-size: 1.6vw;
 		}
 	}
 
 	.description__social-media {
-		width: 60%;
+		width: 50%;
 		&-text {
-			font-size: 1.4vw;
+			font-size: 1.6vw;
 		}
 	}
 
@@ -419,6 +426,8 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (min-width: 551px) and (max-width: $tablet) {
 	.description {
+		margin: 2vw 0;
+
 		&__title_big {
 			font-size: 8vw;
 		}
@@ -536,7 +545,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (min-width: $mobile) and (max-width: 550px) {
 	.description {
-		margin: 20px 0 0 0;
+		margin: 3% 0 0 0;
 
 		&__title_big {
 			font-size: 12vw;
@@ -654,7 +663,7 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: $mobile) {
 	.description {
-		margin: 20px 0 0 0;
+		margin: 3% 0 0 0;
 
 		&__title_big {
 			font-size: 13vw;
@@ -755,6 +764,10 @@
 
 		.description__titles_small {
 			margin: 30px 0 30px 0;
+		}
+
+		ul {
+			padding: 0;
 		}
 	}
 

@@ -30,16 +30,17 @@
 
 	&__pattern1 {
 		width: 10%;
-		img {
-			height: 100%;
-		}
+		background-image: url("../images/work/pattern3.png");
+		background-repeat: repeat-y;
+		background-size: contain;
 	}
 
 	&__pattern2 {
 		width: 10%;
-		img {
-			height: 100%;
-		}
+		background-image: url("../images/work/pattern4.png");
+		background-repeat: repeat-y;
+		background-position: right top;
+		background-size: contain;
 	}
 }
 
@@ -63,20 +64,9 @@
 			line-height: 2.6vw;
 		}
 
-		&__pattern1 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
 			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
 		}
 	}
 
@@ -106,20 +96,9 @@
 			letter-spacing: 0px;
 		}
 
-		&__pattern1 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
 			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
 		}
 	}
 }
@@ -137,20 +116,9 @@
 			letter-spacing: 0px;
 		}
 
-		&__pattern1 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
+			width: 8%;
 		}
 	}
 }
@@ -158,30 +126,19 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (min-width: 551px) and (max-width: $tablet) {
 	.action__wrapper {
-		padding: 15px;
+		padding: 5px;
 
 		&__content {
 			font-size: 3vw;
-			line-height: 4vw;
+			line-height: 4.5vw;
 			letter-spacing: 0px;
 			padding: 0 20px;
 			margin: 0 15px;
 		}
 
-		&__pattern1 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
 			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
 		}
 	}
 
@@ -204,20 +161,9 @@
 			margin: 0;
 		}
 
-		&__pattern1 {
-			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
 			width: 7%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
 		}
 	}
 
@@ -240,20 +186,9 @@
 			margin: 0;
 		}
 
-		&__pattern1 {
-			width: 5%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
+		&__pattern1,
 		&__pattern2 {
 			width: 5%;
-			img {
-				width: 100%;
-				object-fit: cover;
-			}
 		}
 	}
 
