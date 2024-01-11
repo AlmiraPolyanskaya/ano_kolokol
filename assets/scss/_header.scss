@@ -69,115 +69,330 @@
 }
 
 .header__socials {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 0.6% 1.5%;
+	width: 14%;
 	display: flex;
 	justify-content: space-between;
-	gap: 24px;
-	margin-top: -3px;
+	gap: 10%;
 
-	&__telegram {
-		box-sizing: content-box;
-		width: 57px;
-		height: 54px;
-		padding: 3px 3px 0px 3px;
-		margin-top: 5px;
-		margin-right: 20px;
-
-		&:hover {
-			background-color: $hover-color;
-			border-radius: 12px;
-		}
-	}
-
+	&__telegram,
 	&__vkontakte {
+		padding: 5px;
+		width: 55px;
+		height: 55px;
 		box-sizing: content-box;
-		width: 57px;
-		height: 54px;
-		padding: 5px 5px 5px 5px;
+		display: flex;
+		align-items: center;
 
 		&:hover {
 			background-color: $hover-color;
 			border-radius: 12px;
 		}
+
+		& > a {
+			display: flex;
+			align-items: center;
+		}
+
+		& > a > img {
+			width: 55px;
+		}
 	}
 }
 
+/****************************************** Медиа для 1560px+ ************************************************/
 @media screen and (min-width: $large-desktop) {
-	.header__socials {
-		&__telegram,
-		&__vkontakte {
-			width: 8vw;
-			height: auto;
+	.header {
+		&__menu {
+			&__list {
+				&__item {
+					& a {
+						font-size: 1.6vw;
+					}
+				}
+			}
+		}
 
-			& > a > img {
-				width: 4vw;
-				height: auto;
+		&__socials {
+			&__telegram,
+			&__vkontakte {
+				width: 5vw;
+				height: 5vw;
+				padding: 4%;
+
+				& > a > img {
+					width: 5vw;
+				}
+
+				&:hover {
+					background-color: $hover-color;
+					border-radius: 25%;
+				}
+			}
+		}
+
+		&__wrapper {
+			.header__logo {
+				margin-left: 1%;
+				margin-top: 0;
 			}
 		}
 	}
 }
 
+/****************************************** Медиа для 1280-1560px ************************************************/
+@media screen and (min-width: $desktop) and (max-width: $large-desktop) {
+	.header {
+		&__menu {
+			width: 50%;
+
+			&__list {
+				width: 100%;
+				&__item {
+					& a {
+						font-size: 1.6vw;
+					}
+				}
+			}
+		}
+
+		&__socials {
+			margin: 0 1.5%;
+
+			&__telegram,
+			&__vkontakte {
+				width: 5vw;
+				height: 5vw;
+				display: flex;
+				align-items: center;
+
+				& > a {
+					display: flex;
+					align-items: center;
+				}
+
+				& > a > img {
+					width: 5vw;
+				}
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 768-1060px ************************************************/
 @media screen and (min-width: 768px) and (max-width: 1059px) {
-	.header__menu__list {
-		justify-content: center;
+	.header {
+		&__menu {
+			width: 55%;
 
-		&__item {
-			padding: 2px 10px;
+			&__list {
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				width: 100%;
 
-			& > a {
-				line-height: 100%;
-				font-size: 2vw;
+				&__item {
+					& > a {
+						font-size: 1.8vw;
+					}
+				}
+			}
+		}
+
+		&__socials {
+			width: 17%;
+			gap: 2vw;
+			margin: 0.7% 1%;
+
+			&__telegram,
+			&__vkontakte {
+				width: 6vw;
+				height: 6vw;
+
+				& > a > img {
+					width: 6vw;
+				}
 			}
 		}
 	}
 }
 
+/****************************************** Медиа для 551-768px ************************************************/
 @media screen and (max-width: $tablet) {
-	.header__menu__list {
-		flex-direction: column;
-		justify-content: center;
-		flex-wrap: nowrap;
-		@include form-margin-0;
-		width: 40vw;
+	.header {
+		&__menu {
+			width: 50%;
 
-		&__item {
-			padding: 2px 10px;
+			&__list {
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				@include form-margin-0;
+				width: 100%;
 
-			& a {
-				line-height: 100%;
-				font-size: 2vw;
+				&__item {
+					padding: 1% 2%;
+					width: 35%;
+					align-items: center;
+					&:first-child {
+						width: 20%;
+					}
+
+					& a {
+						line-height: 100%;
+						font-size: 2vw;
+					}
+				}
 			}
 		}
-	}
 
-	.header__wrapper {
-		justify-content: space-between;
+		&__wrapper {
+			justify-content: space-between;
 
-		& .header__logo > img {
-			width: 25vw;
-			height: auto;
-			display: block;
+			& .header__logo > img {
+				width: 25vw;
+				height: auto;
+				display: block;
+			}
 		}
-	}
 
-	.header__socials {
-		margin-left: 0;
-		justify-content: flex-start;
-		gap: 5px;
+		&__socials {
+			margin: 0.7% 1%;
+			width: 20%;
+			gap: 5px;
 
-		&__telegram,
-		&__vkontakte {
-			width: 8vw;
-			height: auto;
-
-			& > a > img {
+			&__telegram,
+			&__vkontakte {
 				width: 8vw;
+				height: 8vw;
+
+				& > a > img {
+					width: 8vw;
+				}
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (max-width: 550px) {
+	.header {
+		&__wrapper {
+			flex-wrap: wrap;
+			& .header__logo > img {
+				width: 30vw;
 			}
 		}
 
-		&__telegram {
-			margin-right: 5px;
+		&__logo {
+			width: 50%;
+			order: 0;
+		}
+
+		&__menu {
+			width: 100%;
+			order: 2;
+			border-top: 2px solid $bgc_dark-beige;
+			border-bottom: 2px solid $bgc_dark-beige;
+
+			&__list {
+				justify-content: space-between;
+				flex-direction: row;
+				width: 100%;
+
+				&__item {
+					padding: 2% 0;
+					border-right: 2px solid $bgc_dark-beige;
+					width: calc(100% / 3);
+					&:last-of-type {
+						border-right: none;
+					}
+
+					&:first-child {
+						width: calc(100% / 3);
+						padding: 2% 0;
+					}
+
+					& a {
+						font-size: 2.5vw;
+					}
+
+					&:hover {
+						transform: unset;
+					}
+
+					&:focus {
+						background-color: $hover-color;
+						outline-style: none;
+						-webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+						box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+						transform: unset;
+					}
+				}
+			}
+		}
+
+		&__socials {
+			width: 40%;
+			order: 1;
+			justify-content: flex-end;
+			margin: 0.8% 1.5%;
+			gap: 20px;
+
+			&__telegram,
+			&__vkontakte {
+				width: 10vw;
+				height: 10vw;
+
+				& > a > img {
+					width: 10vw;
+				}
+			}
+		}
+
+		& > .pattern__basic {
+			height: 30px;
+
+			& > img {
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+/****************************************** Медиа для 0-375px ************************************************/
+@media screen and (max-width: $mobile) {
+	.header {
+		&__wrapper {
+			& .header__logo > img {
+				width: 35vw;
+			}
+		}
+
+		&__menu__list {
+			&__item {
+				& a {
+					font-size: 2.8vw;
+				}
+			}
+		}
+
+		&__socials {
+			justify-content: flex-end;
+			margin: 1% 1%;
+			gap: 10px;
+
+			&__telegram,
+			&__vkontakte {
+				width: 12vw;
+				height: 12vw;
+
+				& > a > img {
+					width: 12vw;
+				}
+			}
+		}
+
+		& > .pattern__basic {
+			height: 25px;
 		}
 	}
 }

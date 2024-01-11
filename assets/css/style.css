@@ -127,85 +127,158 @@
 }
 
 .header__socials {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0.6% 1.5%;
+  width: 14%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 24px;
-  margin-top: -3px;
+  gap: 10%;
 }
-.header__socials__telegram {
+.header__socials__telegram, .header__socials__vkontakte {
+  padding: 5px;
+  width: 55px;
+  height: 55px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 57px;
-  height: 54px;
-  padding: 3px 3px 0px 3px;
-  margin-top: 5px;
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header__socials__telegram:hover {
+.header__socials__telegram:hover, .header__socials__vkontakte:hover {
   background-color: rgba(200, 170, 134, 0.4);
   border-radius: 12px;
 }
-.header__socials__vkontakte {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  width: 57px;
-  height: 54px;
-  padding: 5px 5px 5px 5px;
+.header__socials__telegram > a, .header__socials__vkontakte > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header__socials__vkontakte:hover {
-  background-color: rgba(200, 170, 134, 0.4);
-  border-radius: 12px;
+.header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
+  width: 55px;
 }
 
+/****************************************** Медиа для 1560px+ ************************************************/
 @media screen and (min-width: 1560px) {
+  .header__menu__list__item a {
+    font-size: 1.6vw;
+  }
   .header__socials__telegram, .header__socials__vkontakte {
-    width: 8vw;
-    height: auto;
+    width: 5vw;
+    height: 5vw;
+    padding: 4%;
   }
   .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
-    width: 4vw;
-    height: auto;
+    width: 5vw;
+  }
+  .header__socials__telegram:hover, .header__socials__vkontakte:hover {
+    background-color: rgba(200, 170, 134, 0.4);
+    border-radius: 25%;
+  }
+  .header__wrapper .header__logo {
+    margin-left: 1%;
+    margin-top: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1059px) {
-  .header__menu__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+/****************************************** Медиа для 1280-1560px ************************************************/
+@media screen and (min-width: 1280px) and (max-width: 1560px) {
+  .header__menu {
+    width: 50%;
   }
-  .header__menu__list__item {
-    padding: 2px 10px;
+  .header__menu__list {
+    width: 100%;
+  }
+  .header__menu__list__item a {
+    font-size: 1.6vw;
+  }
+  .header__socials {
+    margin: 0 1.5%;
+  }
+  .header__socials__telegram, .header__socials__vkontakte {
+    width: 5vw;
+    height: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__socials__telegram > a, .header__socials__vkontakte > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
+    width: 5vw;
+  }
+}
+/****************************************** Медиа для 768-1060px ************************************************/
+@media screen and (min-width: 768px) and (max-width: 1059px) {
+  .header__menu {
+    width: 55%;
+  }
+  .header__menu__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
   }
   .header__menu__list__item > a {
-    line-height: 100%;
-    font-size: 2vw;
+    font-size: 1.8vw;
+  }
+  .header__socials {
+    width: 17%;
+    gap: 2vw;
+    margin: 0.7% 1%;
+  }
+  .header__socials__telegram, .header__socials__vkontakte {
+    width: 6vw;
+    height: 6vw;
+  }
+  .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
+    width: 6vw;
   }
 }
+/****************************************** Медиа для 551-768px ************************************************/
 @media screen and (max-width: 768px) {
+  .header__menu {
+    width: 50%;
+  }
   .header__menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-margin-before: 0;
             margin-block-start: 0;
     -webkit-margin-after: 0;
             margin-block-end: 0;
-    width: 40vw;
+    width: 100%;
   }
   .header__menu__list__item {
-    padding: 2px 10px;
+    padding: 1% 2%;
+    width: 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__menu__list__item:first-child {
+    width: 20%;
   }
   .header__menu__list__item a {
     line-height: 100%;
@@ -222,21 +295,130 @@
     display: block;
   }
   .header__socials {
-    margin-left: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin: 0.7% 1%;
+    width: 20%;
     gap: 5px;
   }
   .header__socials__telegram, .header__socials__vkontakte {
     width: 8vw;
-    height: auto;
+    height: 8vw;
   }
   .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
     width: 8vw;
   }
-  .header__socials__telegram {
-    margin-right: 5px;
+}
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (max-width: 550px) {
+  .header__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__wrapper .header__logo > img {
+    width: 30vw;
+  }
+  .header__logo {
+    width: 50%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .header__menu {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-top: 2px solid rgb(200, 170, 134);
+    border-bottom: 2px solid rgb(200, 170, 134);
+  }
+  .header__menu__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .header__menu__list__item {
+    padding: 2% 0;
+    border-right: 2px solid rgb(200, 170, 134);
+    width: 33.3333333333%;
+  }
+  .header__menu__list__item:last-of-type {
+    border-right: none;
+  }
+  .header__menu__list__item:first-child {
+    width: 33.3333333333%;
+    padding: 2% 0;
+  }
+  .header__menu__list__item a {
+    font-size: 2.5vw;
+  }
+  .header__menu__list__item:hover {
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .header__menu__list__item:focus {
+    background-color: rgba(200, 170, 134, 0.4);
+    outline-style: none;
+    -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .header__socials {
+    width: 40%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0.8% 1.5%;
+    gap: 20px;
+  }
+  .header__socials__telegram, .header__socials__vkontakte {
+    width: 10vw;
+    height: 10vw;
+  }
+  .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
+    width: 10vw;
+  }
+  .header > .pattern__basic {
+    height: 30px;
+  }
+  .header > .pattern__basic > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/****************************************** Медиа для 0-375px ************************************************/
+@media screen and (max-width: 375px) {
+  .header__wrapper .header__logo > img {
+    width: 35vw;
+  }
+  .header__menu__list__item a {
+    font-size: 2.8vw;
+  }
+  .header__socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 1% 1%;
+    gap: 10px;
+  }
+  .header__socials__telegram, .header__socials__vkontakte {
+    width: 12vw;
+    height: 12vw;
+  }
+  .header__socials__telegram > a > img, .header__socials__vkontakte > a > img {
+    width: 12vw;
+  }
+  .header > .pattern__basic {
+    height: 25px;
   }
 }
 .main-content {
@@ -368,6 +550,46 @@
 @media screen and (max-width: 767px) {
   .main-content__info__title__wrapper, .main-content__info__text__wrapper {
     margin-left: 5vw;
+  }
+}
+/****************************************** Медиа для 375-550px ************************************************/
+@media screen and (max-width: 550px) {
+  .pattern__basic2 {
+    margin-top: 3%;
+    height: 30px;
+  }
+  .pattern__basic2 > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-content__info__title__wrapper .main-content__info__title {
+    font-size: 9vw;
+    -webkit-text-stroke: 0.7px rgba(45, 48, 56, 0.8);
+  }
+  .main-content__info__text__wrapper {
+    height: 28vw;
+    width: 65vw;
+  }
+  .main-content__info__text__wrapper .main-content__info__text {
+    font-size: 2.8vw;
+  }
+}
+/****************************************** Медиа для 0-375px ************************************************/
+@media screen and (max-width: 375px) {
+  .pattern__basic2 {
+    height: 25px;
+  }
+  .main-content__info__title__wrapper .main-content__info__title {
+    text-align: center;
+    font-size: 10vw;
+    -webkit-text-stroke: 0.6px rgba(45, 48, 56, 0.8);
+  }
+  .main-content__info__text__wrapper {
+    height: 28vw;
+    width: 70vw;
+  }
+  .main-content__info__text__wrapper .main-content__info__text {
+    font-size: 2.9vw;
   }
 }
 .description {
@@ -797,6 +1019,7 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (min-width: 551px) and (max-width: 768px) {
   .description {
+    margin: 2vw 0;
     position: relative;
   }
   .description__title_big {
@@ -909,7 +1132,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (min-width: 375px) and (max-width: 550px) {
   .description {
-    margin: 20px 0 0 0;
+    margin: 3% 0 0 0;
     position: relative;
   }
   .description__title_big {
@@ -1020,7 +1243,7 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: 375px) {
   .description {
-    margin: 20px 0 0 0;
+    margin: 3% 0 0 0;
     position: relative;
   }
   .description__title_big {
@@ -2812,7 +3035,7 @@
     margin-bottom: 10%;
   }
   .footer__title_second {
-    margin-bottom: 12%;
+    margin-bottom: 10%;
   }
   .footer-nav__list {
     gap: 2vw;

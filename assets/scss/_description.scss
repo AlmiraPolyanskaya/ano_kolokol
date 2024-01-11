@@ -426,6 +426,8 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (min-width: 551px) and (max-width: $tablet) {
 	.description {
+		margin: 2vw 0;
+
 		&__title_big {
 			font-size: 8vw;
 		}
@@ -543,7 +545,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (min-width: $mobile) and (max-width: 550px) {
 	.description {
-		margin: 20px 0 0 0;
+		margin: 3% 0 0 0;
 
 		&__title_big {
 			font-size: 12vw;
@@ -661,7 +663,7 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: $mobile) {
 	.description {
-		margin: 20px 0 0 0;
+		margin: 3% 0 0 0;
 
 		&__title_big {
 			font-size: 13vw;
