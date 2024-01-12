@@ -730,6 +730,9 @@
 .description__contacts-list .description__bold-font {
   font-weight: bold;
 }
+.description__contacts-list .email-link {
+  color: black;
+}
 
 .description__requisites-list {
   display: -webkit-box;
