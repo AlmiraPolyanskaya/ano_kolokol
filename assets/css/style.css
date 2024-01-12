@@ -1796,6 +1796,9 @@
     display: flex;
     width: 400%;
     height: 100%;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
   .work__images-slides-1 input[name=r], .work__images-slides-2 input[name=r] {
     position: absolute;
