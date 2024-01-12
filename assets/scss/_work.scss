@@ -244,7 +244,7 @@
 }
 
 /****************************************** Медиа для 768-1060px ************************************************/
-@media screen and (min-width: $tablet) and (max-width: $big-tablet) {
+@media screen and (max-width: $big-tablet) {
 	.work {
 		margin-bottom: 4%;
 
@@ -356,7 +356,7 @@
 }
 
 /****************************************** Медиа для 551-768px ************************************************/
-@media screen and (min-width: 551px) and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
 	.work {
 		margin-bottom: 7%;
 
@@ -375,103 +375,24 @@
 			padding-left: 2%;
 		}
 
-		&__titles-big {
-			width: 100%;
-		}
-
 		&__subtitle-1,
 		&__subtitle-2 {
 			font-size: 2.8vw;
-			line-height: 140%;
 			p {
 				width: 100%;
 			}
 			padding-right: 2%;
 		}
 
-		&__image1,
-		&__image2,
-		&__image3,
-		&__image4,
-		&__image5,
-		&__image6,
-		&__image7,
-		&__image8 {
-			padding: 7%;
-			width: 80%;
-		}
-
-		&__picture {
-			padding-bottom: 7%;
-			object-fit: cover;
-		}
-
 		&__subtext {
 			font-size: 2vw;
-		}
-
-		&__images-wrapper-1,
-		&__images-wrapper-2 {
-			display: flex;
-		}
-
-		&__images-slides-1,
-		&__images-slides-2 {
-			display: grid;
-			justify-content: center;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			row-gap: 5%;
-			margin-bottom: 5%;
-		}
-
-		&__image1 {
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
-
-		&__image2 {
-			grid-column: 2/3;
-			grid-row: 1/2;
-		}
-
-		&__image3 {
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-
-		&__image4 {
-			grid-column: 2/3;
-			grid-row: 2/3;
-		}
-
-		&__image5 {
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
-
-		&__image6 {
-			grid-column: 2/3;
-			grid-row: 1/2;
-		}
-
-		&__image7 {
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-
-		&__image8 {
-			grid-column: 2/3;
-			grid-row: 2/3;
 		}
 	}
 }
 
 /****************************************** Медиа для 375-550px ************************************************/
-@media screen and (min-width: $mobile) and (max-width: 550px) {
+@media screen and (max-width: 550px) {
 	.work {
-		margin-bottom: 7%;
-
 		&__wrapper {
 			padding: 20px 3%;
 		}
@@ -504,17 +425,12 @@
 		}
 
 		&__titles-big {
-			width: 100%;
 			margin: 5%;
 		}
 
 		&__subtitle-1,
 		&__subtitle-2 {
 			font-size: 3.3vw;
-			line-height: 140%;
-			p {
-				width: 100%;
-			}
 			padding-right: 0;
 			order: 1;
 			border-right: none;
@@ -539,19 +455,17 @@
 		&__image6,
 		&__image7,
 		&__image8 {
-			padding: 2%;
+			display: block;
 			width: 25%;
+			padding: 2%;
+			margin: 0;
 			transition: all 0.6s ease;
 			box-sizing: border-box;
-			display: block;
-			margin: 0;
-			background-color: rgba(200, 170, 134, 0.2);
 			box-shadow: none;
 		}
 
 		&__picture {
 			padding-bottom: 10%;
-			object-fit: cover;
 			width: 100%;
 		}
 
@@ -606,10 +520,10 @@
 				position: absolute;
 				visibility: hidden;
 			}
-
+			display: flex;
 			width: 400%;
 			height: 100%;
-			display: flex;
+			justify-content: unset;
 		}
 	}
 
@@ -649,18 +563,6 @@
 /****************************************** Медиа для 100-375px ************************************************/
 @media screen and (min-width: 100px) and (max-width: $mobile) {
 	.work {
-		margin-bottom: 7%;
-
-		&__wrapper {
-			padding: 20px 3%;
-		}
-
-		&__title-1-wrapper,
-		&__title-2-wrapper {
-			margin-block: 5%;
-			flex-direction: column;
-		}
-
 		&__title-2-wrapper {
 			margin: 10% 0 5% 0;
 		}
@@ -668,151 +570,41 @@
 		&__title-1,
 		&__title-2 {
 			font-size: 9vw;
-			padding-left: 0;
-			order: 0;
-			text-align: center;
-			justify-content: center;
 			width: 100%;
-		}
-
-		&__titles-big {
-			width: 100%;
-			margin: 5%;
 		}
 
 		&__subtitle-1,
 		&__subtitle-2 {
 			font-size: 4.5vw;
-			line-height: 140%;
-			p {
-				width: 100%;
-			}
-			padding-right: 0;
-			order: 1;
-			border-right: none;
-			border-top: 1px solid black;
-			text-align: center;
-			justify-content: center;
 			width: 90%;
 		}
 
 		&__images-wrapper-1,
 		&__images-wrapper-2 {
-			display: block;
 			width: 85%;
-			overflow: hidden;
-		}
-
-		&__image1,
-		&__image2,
-		&__image3,
-		&__image4,
-		&__image5,
-		&__image6,
-		&__image7,
-		&__image8 {
-			padding: 2%;
-			width: 25%;
-			transition: all 0.6s ease;
-			box-sizing: border-box;
-			display: block;
-			margin: 0;
-			background-color: rgba(200, 170, 134, 0.2);
-			box-shadow: none;
 		}
 
 		&__picture {
 			padding-bottom: 7%;
-			object-fit: cover;
-			width: 100%;
 		}
 
 		&__subtext {
 			font-size: 4vw;
-			text-align: center;
 		}
 
 		&__navigation-1,
 		&__navigation-2 {
-			display: flex;
-			flex-direction: column;
-
-			position: relative;
-			bottom: 0px;
-			margin: 5px 0;
-
 			p {
 				font-size: 3.8vw;
-				line-height: 140%;
-				text-align: center;
-				width: 70%;
-				align-self: center;
 			}
 		}
 
 		&__navigation-wrapper-1,
 		&__navigation-wrapper-2 {
-			display: flex;
-			justify-content: space-around;
-
 			.bar {
-				width: calc(30px + 2vw);
-				height: calc(30px + 2vw);
-				margin: 10px;
-				background-color: #000;
-				opacity: 0.4;
-				border-radius: 50px;
-				transition: all 0.4s ease;
-			}
-
-			.bar:hover {
-				opacity: 0.8;
-				transform: scale(1.2);
+				width: 13vw;
+				height: 13vw;
 			}
 		}
-
-		&__images-slides-1,
-		&__images-slides-2 {
-			input[name="r"] {
-				position: absolute;
-				visibility: hidden;
-			}
-
-			width: 400%;
-			height: 100%;
-			display: flex;
-		}
-	}
-
-	#r1:checked ~ .s1 {
-		margin-left: 0;
-	}
-
-	#r2:checked ~ .s1 {
-		margin-left: -25%;
-	}
-
-	#r3:checked ~ .s1 {
-		margin-left: -50%;
-	}
-
-	#r4:checked ~ .s1 {
-		margin-left: -75%;
-	}
-
-	#r5:checked ~ .s2 {
-		margin-left: 0;
-	}
-
-	#r6:checked ~ .s2 {
-		margin-left: -25%;
-	}
-
-	#r7:checked ~ .s2 {
-		margin-left: -50%;
-	}
-
-	#r8:checked ~ .s2 {
-		margin-left: -75%;
 	}
 }
