@@ -3,7 +3,7 @@
 @import "_placeholder _selectors";
 
 .smi {
-	margin: 3% 0 1.5% 0;
+	margin: 3% 0 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -84,12 +84,13 @@
 	}
 }
 
-.smi > .pattern__basic {
+.pattern__basic {
 	display: flex;
-	margin-top: 5%;
+	justify-content: center;
+	margin: 5% 0 1.5% 0;
 
 	& > img {
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		display: block;
 	}
@@ -218,7 +219,7 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (max-width: $tablet) {
 	.smi {
-		margin: 5% 5.5% 1.5% 5.5%;
+		margin: 5% 5.5% 0 5.5%;
 		&__wrapper {
 			width: 95%;
 			padding: 5%;
@@ -266,7 +267,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (max-width: 550px) {
 	.smi {
-		margin: 10% 0 4% 0;
+		margin: 10% 0 0 0;
 		&__content {
 			width: 100%;
 			&__title {
@@ -296,9 +297,10 @@
 		}
 	}
 
-	.smi > .pattern__basic {
+	.pattern__basic {
 		height: 30px;
 		justify-content: center;
+		margin: 5% 0 2% 0;
 
 		& > img {
 			object-fit: cover;
@@ -351,7 +353,7 @@
 		}
 	}
 
-	.smi > .pattern__basic {
+	.pattern__basic {
 		height: 25px;
 	}
 }
