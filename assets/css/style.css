@@ -2117,7 +2117,7 @@
 }
 
 .smi {
-  margin: 3% 0 1.5% 0;
+  margin: 3% 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2206,14 +2206,17 @@
   text-decoration: none;
 }
 
-.smi > .pattern__basic {
+.pattern__basic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0 1.5% 0;
 }
-.smi > .pattern__basic > img {
-  width: 100vw;
+.pattern__basic > img {
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -2301,7 +2304,7 @@
 /****************************************** Медиа для 551-768px ************************************************/
 @media screen and (max-width: 768px) {
   .smi {
-    margin: 5% 5.5% 1.5% 5.5%;
+    margin: 5% 5.5% 0 5.5%;
   }
   .smi__wrapper {
     width: 95%;
@@ -2347,7 +2350,7 @@
 /****************************************** Медиа для 375-550px ************************************************/
 @media screen and (max-width: 550px) {
   .smi {
-    margin: 10% 0 4% 0;
+    margin: 10% 0 0 0;
   }
   .smi__content {
     width: 100%;
@@ -2368,13 +2371,14 @@
   .smi__photo {
     width: 80%;
   }
-  .smi > .pattern__basic {
+  .pattern__basic {
     height: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 5% 0 2% 0;
   }
-  .smi > .pattern__basic > img {
+  .pattern__basic > img {
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2414,7 +2418,7 @@
   .smi__photo > img {
     border-radius: 10px;
   }
-  .smi > .pattern__basic {
+  .pattern__basic {
     height: 25px;
   }
 }
