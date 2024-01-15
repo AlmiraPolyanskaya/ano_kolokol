@@ -2206,7 +2206,7 @@
   text-decoration: none;
 }
 
-.pattern__basic {
+.pattern__basic3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2215,7 +2215,7 @@
           justify-content: center;
   margin: 5% 0 1.5% 0;
 }
-.pattern__basic > img {
+.pattern__basic3 > img {
   width: 100%;
   height: auto;
   display: block;
@@ -2371,14 +2371,14 @@
   .smi__photo {
     width: 80%;
   }
-  .pattern__basic {
+  .pattern__basic3 {
     height: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5% 0 2% 0;
   }
-  .pattern__basic > img {
+  .pattern__basic3 > img {
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2418,7 +2418,7 @@
   .smi__photo > img {
     border-radius: 10px;
   }
-  .pattern__basic {
+  .pattern__basic3 {
     height: 25px;
   }
 }
